@@ -1,0 +1,25 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    padding: 0.1rem 15rem 0.1rem 15rem;
+    margin: 0;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    &-menu{
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img{
+            width: 8rem;
+        }
+    }
+}

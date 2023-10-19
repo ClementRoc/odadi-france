@@ -1,3 +1,21 @@
 <div class="header">
-    <h1 class="title">Coucou</h1>
+    <ul class="header-menu">
+        <li class="header-menu-list">
+            <a href="{{ path('app_news') }}">Actualités</a>
+        </li>
+        <li class="header-menu-list">
+            <a href="{{ path('app_actions') }}">Nos actions</a>
+        </li>
+        <li class="header-menu-list">
+            <a href="{{ path('app_home') }}">
+                <img src="{{ asset('build/img/logos/odadi.jpg') }}" alt="" class="header-menu-img">
+            </a>
+        </li>
+        <li class="header-menu-list">
+            <a href="{{ path('app_history') }}">Histoire</a>
+        </li>
+        <li class="header-menu-list">
+            <a href="{{ path('app_contact') }}">Contact</a>
+        </li>
+    </ul>
 </div>

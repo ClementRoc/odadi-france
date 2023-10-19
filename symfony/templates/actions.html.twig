@@ -1,0 +1,16 @@
+{% extends '_layout.html.twig' %}
+
+{% set pageTemplate = 'actions' %}
+{% set titleTag = 'actions.titleTag'|trans %}
+{% set metaDescription = 'actions.metaDescription'|trans %}
+
+{% block body %}
+    {% include 'include/header.html.twig' %}
+    {% include 'include/donation-menu.html.twig' %}
+    <div class="actions">
+        <div class="actions-header">
+            <h1>Nos actions</h1>
+        </div>
+    </div>
+    {% include 'include/footer.html.twig' %}
+{% endblock %}

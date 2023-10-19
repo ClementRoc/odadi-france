@@ -1,0 +1,16 @@
+{% extends '_layout.html.twig' %}
+
+{% set pageTemplate = 'news' %}
+{% set titleTag = 'news.titleTag'|trans %}
+{% set metaDescription = 'news.metaDescription'|trans %}
+
+{% block body %}
+    {% include 'include/header.html.twig' %}
+    {% include 'include/donation-menu.html.twig' %}
+    <div class="news">
+        <div class="news-header">
+            <h1>Nos actualités</h1>
+        </div>
+    </div>
+    {% include 'include/footer.html.twig' %}
+{% endblock %}

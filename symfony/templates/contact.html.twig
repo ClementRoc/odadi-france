@@ -1,0 +1,16 @@
+{% extends '_layout.html.twig' %}
+
+{% set pageTemplate = 'contact' %}
+{% set titleTag = 'contact.titleTag'|trans %}
+{% set metaDescription = 'contact.metaDescription'|trans %}
+
+{% block body %}
+    {% include 'include/header.html.twig' %}
+    {% include 'include/donation-menu.html.twig' %}
+    <div class="contact">
+        <div class="contact-header">
+            <h1>Contactez-nous</h1>
+        </div>
+    </div>
+    {% include 'include/footer.html.twig' %}
+{% endblock %}

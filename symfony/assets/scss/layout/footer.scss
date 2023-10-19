@@ -1,0 +1,16 @@
+.footer{
+    background-color: $grey;
+    padding: 2rem 15rem 2rem 15rem;
+
+    a{
+        text-decoration: none;
+    }
+
+    &-content{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+}
