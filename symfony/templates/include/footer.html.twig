@@ -1,8 +1,8 @@
 <div class="footer">
     <ul class="footer-content">
         <li class="footer-content-map">
-            <map name=""></map>
-            <p>6 Rue Des Hortensias 35270 Combourg</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.1433801036255!2d-1.7378591!3d48.4153916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e951298cb3fa9%3A0xa8ac6ad0b8aef45c!2s6%20Rue%20des%20Hortensias%2C%2035270%20Combourg!5e0!3m2!1sfr!2sfr!4v1698055120311!5m2!1sfr!2sfr" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="postal-adress" href="{{ 'odadi.google-maps'|trans }}" target="_blank"><p>6 Rue Des Hortensias <br> 35270 Combourg</p></a>
         </li>
         <li class="footer-content-rgpd">
             <ul class="footer-content-rgpd-list">
@@ -19,11 +19,16 @@
         </li>
         <li class="footer-content-social">
             <p>Retrouvez-nous</p>
-            <div class="footer-content-social-logos"></div>
+            <div class="footer-content-social-logos">
+                <a href="{{ 'odadi.facebook'|trans }}" target="_blank"><img src="{{ asset('build/img/logos/facebook.png') }}" alt="Facebook"></a>
+                <a href="{{ 'odadi.instagram'|trans }}" target="_blank"><img src="{{ asset('build/img/logos/insta.png') }}" alt="Instagram"></a>
+            </div>
         </li>
         <li class="footer-content-partner">
             <p>Partenaires</p>
-            <img src="" alt="">
+            <div class="footer-content-partner-logos">
+                <a href="{{ 'odadi.partner.FSCF'|trans }}" target="_blank"><img src="{{ asset('build/img/logos/FSCF.png') }}" alt="FSCF"></a>
+            </div>
         </li>
     </ul>
 </div>

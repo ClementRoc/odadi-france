@@ -1,9 +1,10 @@
 .footer{
     background-color: $grey;
-    padding: 2rem 15rem 2rem 15rem;
+    padding: 1rem 15rem 1rem 15rem;
 
     a{
         text-decoration: none;
+        color: black;
     }
 
     &-content{
@@ -12,5 +13,54 @@
         justify-content: space-between;
         align-items: center;
         list-style: none;
+
+        &-map{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 3rem;
+
+            .postal-adress{
+                text-align: center;
+            }
+        }
+
+        &-rgpd{
+
+            &-list{
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 0.5rem;
+                list-style: none;
+                text-align: center;
+            }
+        }
+
+        &-social{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            &-logos{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 3rem;
+            }
+        }
+
+        &-partner{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            &-logos{
+                display: flex;
+                flex-flow: row nowrap;
+
+                img{
+                    width: 7rem;
+                }
+            }
+        }
     }
 }

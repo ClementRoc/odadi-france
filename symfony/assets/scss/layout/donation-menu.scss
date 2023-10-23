@@ -1,8 +1,47 @@
 .donation-menu{
     position: fixed;
-    left: 5rem;
+    left: 7.5rem;
     top: 15rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 5rem;
+    gap: 3rem;
+    align-items: flex-start;
+
+    .yellow{
+        background-color: $yellow;
+    }
+
+    .green{
+        background-color: $green;
+    }
+
+    .link:hover{
+        display: block;
+        width: 15rem;
+
+        
+        .link-text{
+            display: block;
+        }
+    }
+
+    .link-text{
+        display: none;
+        margin: 0;
+    }
+
+    &-item{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        border-radius: 50px;
+        padding: 0.8rem;
+        width: auto;
+
+        img{
+            width: 1.5rem;
+        }
+    }
 }
