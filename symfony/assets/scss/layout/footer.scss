@@ -1,4 +1,8 @@
 .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12rem;
     background-color: $grey;
     padding: 1rem 15rem 1rem 15rem;
 
@@ -18,7 +22,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            gap: 3rem;
+            gap: 4rem;
 
             .postal-adress{
                 text-align: center;
@@ -33,6 +37,7 @@
                 gap: 0.5rem;
                 list-style: none;
                 text-align: center;
+                padding: 0;
             }
         }
 

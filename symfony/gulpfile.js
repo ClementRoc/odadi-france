@@ -107,4 +107,4 @@ process.on('SIGINT', function() {
     process.exit();
 });
 
-exports.default = gulp.series(['css', 'webp', 'image', 'js']);
+exports.default = gulp.series(['css', 'css-fonts', 'fonts', 'webp', 'image', 'js']);

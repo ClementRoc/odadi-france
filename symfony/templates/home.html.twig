@@ -9,8 +9,26 @@
     {% include 'include/donation-menu.html.twig' %}
     <div class="home">
         <div class="home-header">
-            <h1>Aidez nous à développer la communauté Malgache</h1>
-            <h2>Coucou</h2>
+            <img class="home-header-img" src="{{ asset('build/img/home/header/header-img.png') }}" alt="Madagascar">
+            <img class="home-header-background" src="{{ asset('build/img/home/header/background.jpg') }}" alt="">
+            <h1 class="home-header-title">Aidez nous à développer <br>la communauté Malgache</h1>
+        </div>
+        <div class="home-actions">
+            <h1 class="home-actions-title">Nos actions</h1>
+            <hr>
+            <div class="home-actions-slides">
+                <div class="home-actions-slides-left">
+                    <img src="{{ asset('build/img/home/actions/slides/formation.png') }}" alt="">
+                    <img src="{{ asset('build/img/home/actions/slides/urbanisation.png') }}" alt="">
+                </div>
+                <div class="home-actions-slides-center">
+                    <img src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
+                </div>
+                <div class="home-actions-slides-right">
+                    <img src="{{ asset('build/img/home/actions/slides/apiculture.png') }}" alt="">
+                    <img src="{{ asset('build/img/home/actions/slides/agriculture.png') }}" alt="">
+                </div>
+            </div>
         </div>
     </div>
     {% include 'include/footer.html.twig' %}

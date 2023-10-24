@@ -4,8 +4,8 @@
     top: 15rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 3rem;
     align-items: flex-start;
+    gap: 3rem;
 
     .yellow{
         background-color: $yellow;
@@ -15,33 +15,33 @@
         background-color: $green;
     }
 
-    .link:hover{
-        display: block;
-        width: 15rem;
-
-        
-        .link-text{
-            display: block;
-        }
-    }
-
     .link-text{
         display: none;
         margin: 0;
+        color: black;
     }
 
     &-item{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
         align-items: center;
-        gap: 3rem;
+        text-decoration: none;
+        width: 3.5rem;
         border-radius: 50px;
-        padding: 0.8rem;
-        width: auto;
+        gap: 1rem;
+        padding: 1rem;
+        transition: width .6s ease; 
 
         img{
             width: 1.5rem;
+        }
+
+        &:hover{
+            width: 15rem;
+
+            .link-text{
+                display: block;
+            }
         }
     }
 }
