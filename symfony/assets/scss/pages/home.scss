@@ -1,7 +1,7 @@
 .page-home{
 
     .home{
-        padding: 6rem 28rem 17rem 28rem;
+        padding: 6rem 27.5rem 17rem 27.5rem;
         display: flex;
         flex-flow: column nowrap;
         gap: 2rem;
@@ -33,6 +33,8 @@
         }
 
         &-actions{
+            position: relative;
+            width: 100%;
 
             &-title{
                 position: relative;
@@ -41,15 +43,16 @@
 
             hr{
                 position: absolute;
-                right: 0;
-                width: 50%;
+                right: -50%;
+                width: 100%;
             }
 
             &-slides{
                 display: flex;
                 flex-flow: row nowrap;
+                justify-content: space-between;
                 margin-top: 2rem;
-                gap: 1rem;
+                margin-bottom: 1rem;
 
                 &-left,
                 &-right,
@@ -58,6 +61,11 @@
                     flex-flow: column nowrap;
                     gap: 1rem;
                 }
+            }
+
+            &-button{
+                position: absolute;
+                right: 0;
             }
         }
     }

@@ -18,17 +18,36 @@
             <hr>
             <div class="home-actions-slides">
                 <div class="home-actions-slides-left">
-                    <img src="{{ asset('build/img/home/actions/slides/formation.png') }}" alt="">
-                    <img src="{{ asset('build/img/home/actions/slides/urbanisation.png') }}" alt="">
+                    <a href="" class="slide slide-green">
+                        <img src="{{ asset('build/img/home/actions/slides/formation.png') }}" alt="">
+                        <p class="slide-text">FORMATION</p>
+                    </a>
+                    <a href="" class="slide slide-yellow">
+                        <img src="{{ asset('build/img/home/actions/slides/urbanisation.png') }}" alt="">
+                        <p class="slide-text">URBANISATION</p>
+                    </a>
                 </div>
                 <div class="home-actions-slides-center">
-                    <img src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
+                    <a href="" class="slide slide-yellow">
+                        <img src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
+                        <p class="slide-text">NOURRITURE</p>
+                    </a>
                 </div>
                 <div class="home-actions-slides-right">
-                    <img src="{{ asset('build/img/home/actions/slides/apiculture.png') }}" alt="">
-                    <img src="{{ asset('build/img/home/actions/slides/agriculture.png') }}" alt="">
+                    <a href="" class="slide slide-yellow">
+                        <img src="{{ asset('build/img/home/actions/slides/apiculture.png') }}" alt="">
+                        <p class="slide-text">APICULTURE</p>
+                    </a>
+                    <a href="" class="slide slide-green">
+                        <img src="{{ asset('build/img/home/actions/slides/agriculture.png') }}" alt="">
+                        <p class="slide-text vertical">AGRICULTURE</p>
+                    </a>
                 </div>
             </div>
+            <a class="home-actions-button button yellow" href="{{ path('app_actions') }}">
+                En savoir plus
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+            </a>
         </div>
     </div>
     {% include 'include/footer.html.twig' %}

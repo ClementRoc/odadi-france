@@ -1,0 +1,34 @@
+.button{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 0 50px 50px 50px;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    font-size: 20px;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    width: 13.7rem;
+
+    img{
+        border-radius: 50px;
+        background-color: $yellow-light;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    &:hover{
+        background-color: $green;
+        color: $white;
+        gap: 2rem;
+        transition: gap 500ms;
+
+        img{
+            background-color: $green-light;
+            transition-duration: 500ms;
+            transform: rotate(-180deg);
+            margin-right: .5rem;
+        }
+    }
+}

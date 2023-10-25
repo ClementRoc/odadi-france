@@ -1,0 +1,24 @@
+.slide{
+    text-decoration: none;
+    position: relative;
+
+    .vertical{
+        writing-mode: vertical-rl;
+    }
+
+    &-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        z-index: 1000;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    img{
+        background-color: $green;   
+        filter: hue-rotate(0deg);
+    }
+}
