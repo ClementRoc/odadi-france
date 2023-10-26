@@ -11,6 +11,7 @@
         display: none;
         margin: 0;
         color: black;
+        font-size: 24px;
     }
 
     &-item{
@@ -19,6 +20,7 @@
         align-items: center;
         text-decoration: none;
         width: 3.5rem;
+        height: 3.5rem;
         border-radius: 50px;
         gap: 1rem;
         padding: 1rem;

@@ -7,47 +7,79 @@
 {% block body %}
     {% include 'include/header.html.twig' %}
     {% include 'include/donation-menu.html.twig' %}
-    <div class="home">
+    <div class="home lazyload">
+        <img class="home-background" src="{{ asset('build/img/home/background.png') }}" alt="">
         <div class="home-header">
             <img class="home-header-img" src="{{ asset('build/img/home/header/header-img.png') }}" alt="Madagascar">
             <img class="home-header-background" src="{{ asset('build/img/home/header/background.jpg') }}" alt="">
             <h1 class="home-header-title">Aidez nous à développer <br>la communauté Malgache</h1>
         </div>
         <div class="home-actions">
-            <h1 class="home-actions-title">Nos actions</h1>
-            <hr>
+            <h1 class="home-actions-title lazyload-right">Nos actions</h1>
+            <hr class="lazyload-right">
             <div class="home-actions-slides">
                 <div class="home-actions-slides-left">
                     <a href="" class="slide slide-green">
                         <img src="{{ asset('build/img/home/actions/slides/formation.png') }}" alt="">
-                        <p class="slide-text">FORMATION</p>
+                        <p class="slide-text lazyload">FORMATION</p>
+                        <div class="slide-background lazyload"></div>
                     </a>
                     <a href="" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/urbanisation.png') }}" alt="">
-                        <p class="slide-text">URBANISATION</p>
+                        <p class="slide-text lazyload">URBANISATION</p>
+                        <div class="slide-background lazyload"></div>
                     </a>
                 </div>
                 <div class="home-actions-slides-center">
                     <a href="" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
-                        <p class="slide-text">NOURRITURE</p>
+                        <p class="slide-text lazyload">NOURRITURE</p>
+                        <div class="slide-background lazyload"></div>
                     </a>
                 </div>
                 <div class="home-actions-slides-right">
                     <a href="" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/apiculture.png') }}" alt="">
-                        <p class="slide-text">APICULTURE</p>
+                        <p class="slide-text lazyload">APICULTURE</p>
+                        <div class="slide-background lazyload"></div>
                     </a>
                     <a href="" class="slide slide-green">
                         <img src="{{ asset('build/img/home/actions/slides/agriculture.png') }}" alt="">
-                        <p class="slide-text vertical">AGRICULTURE</p>
+                        <p class="slide-text lazyload vertical">AGRICULTURE</p>
+                        <div class="slide-background lazyload"></div>
                     </a>
                 </div>
             </div>
-            <a class="home-actions-button button yellow" href="{{ path('app_actions') }}">
+            <a class="home-actions-button button button-yellow yellow" href="{{ path('app_actions') }}">
                 En savoir plus
                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
             </a>
+        </div>
+        <div class="home-hotnews">
+            <div class="home-hotnews-img">
+                <img class="ellipse" src="{{ asset('build/img/home/hotnews/ellipse-hotnews.png') }}" alt="">
+                <div class="principal-cropper">
+                    <img class="principal-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
+                </div>
+                <div class="second-cropper">
+                    <img class="second-cropper-img" src="{{ asset('build/img/home/hotnews/second-picture.jpg') }}" alt="">
+                </div>
+            </div>
+            <div class="home-hotnews-actuality">
+                <h1 class="home-hotnews-actuality-title">À la une</h1>
+                <div class="home-hotnews-actuality-news">
+                    <p class="home-hotnews-actuality-news-title">Une nouvelle école en construction</p>
+                    <p class="home-hotnews-actuality-news-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis rerum quas quod quidem, architecto consequuntur quo quaerat ad ex natus dolorem aspernatur impedit quae reprehenderit hic, iste nihil doloribus!</p>
+                    <a class="home-hotnews-button button button-yellow yellow" href="">
+                        En savoir plus
+                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                    </a>
+                    <a class="home-hotnews-button button button-yellow yellow" href="{{ path('app_news') }}">
+                        Plus d'articles
+                        <img src="{{ asset('build/img/logos/+.png') }}" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     {% include 'include/footer.html.twig' %}

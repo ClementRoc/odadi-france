@@ -1,0 +1,67 @@
+.page-news{
+
+    .news{
+        padding: 8rem 15rem 17rem 27.5rem;
+
+        &-header{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            h1{
+                font-size: 56px;
+                font-weight: 200;
+            }
+
+            &-button{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 1rem;
+            }
+        }
+    
+        hr{
+            position: absolute;
+            right: 0;
+            width: 78%;
+        }
+
+        &-filter{
+            margin-top: 2.5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 3rem;
+
+            select{
+                appearance: none;  background-image: url("../img/logos/arrow.png");
+                background-repeat: no-repeat;
+                background-position: right 1rem top 50%;
+                background-size: 1rem auto;
+            }
+
+            input{ 
+                background-image: url("../img/logos/+.png");
+                background-repeat: no-repeat;
+                background-position: right 1rem top 50%;
+                background-size: 1rem auto;
+
+                &:focus,
+                &:hover{
+                    background-image: none;
+                }
+            }
+            
+            &-button{
+                height: 3.5rem;
+            }
+        }
+
+        &-container{
+            margin-top: 6.5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 5rem;
+        }
+    }
+}

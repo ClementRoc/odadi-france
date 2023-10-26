@@ -3,10 +3,17 @@ odadi:
   google-maps: https://www.google.com/maps/place/6+Rue+des+Hortensias,+35270+Combourg/@48.4153916,-1.7378591,17z/data=!3m1!4b1!4m6!3m5!1s0x480e951298cb3fa9:0xa8ac6ad0b8aef45c!8m2!3d48.4153916!4d-1.7378591!16s%2Fg%2F11c4jtyq05?entry=ttu
   instagram: https://www.instagram.com/odadifrance/
   facebook: https://www.facebook.com/lydia.patrakala
+  donation: https://www.helloasso.com/associations/odadi/formulaires/2
+  membership: https://www.helloasso.com/associations/odadi/adhesions/adhesion
   partner:
     FSCF: https://www.fscf.asso.fr/
 
 home: 
   name: Page d'accueil
-  titleTag: Odadi France
+  titleTag: Odadi France - Accueil
+  metaDescription: Association caritative qui a pour but de soutenir Madagascar
+
+news: 
+  name: Page d'actualité
+  titleTag: Odadi France - Notre actualité
   metaDescription: Association caritative qui a pour but de soutenir Madagascar

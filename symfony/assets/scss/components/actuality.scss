@@ -1,0 +1,59 @@
+.actuality{
+
+    &-overlook{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 2rem;
+        width: 45%;
+
+        &-cropper{
+            width: 15rem;
+            height: 10rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            z-index: -1;
+
+            &-img{
+                display: inline;
+                margin: 0 auto;
+                margin-left: -25%;
+                height: 100%;
+                width: auto;
+            }
+
+            &-ag{
+                position: absolute;
+                z-index: 999;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                font-size: 60px;
+                font-weight: 800;
+                margin: 0;
+            }
+        }
+
+        &-info{
+            width: fit-content;
+
+            &-title{
+                margin: 0;
+                font-family: $font-roboto-bold;
+            }
+
+            &-date{
+                font-size: 16px;
+                font-style: italic;
+                margin-top: 8px;
+            }
+
+            &-preview{
+                font-size: 20px;
+                margin-top: 0;
+            }
+        }
+    }
+}

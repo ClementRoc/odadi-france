@@ -4,12 +4,18 @@
         padding: 6rem 27.5rem 17rem 27.5rem;
         display: flex;
         flex-flow: column nowrap;
-        gap: 2rem;
+        gap: 6rem;
 
         h1{
             font-size: 56px;
-            width: 40%;
             font-weight: 200;
+        }
+
+        &-background{
+            position: absolute;
+            left: -55%;
+            bottom: 0;
+            z-index: -1;
         }
 
         &-header{
@@ -22,6 +28,7 @@
 
             &-title{
                 text-align: end;
+                width: 40%;
             }
 
             &-background{
@@ -66,6 +73,88 @@
             &-button{
                 position: absolute;
                 right: 0;
+            }
+        }
+
+        &-hotnews{
+            margin-top: 4rem;
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 5rem;
+            
+            &-img{
+                position: relative;
+
+                .ellipse{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .principal-cropper{
+                    width: 20rem;
+                    height: 20rem;
+                    position: relative;
+                    top: 2rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    z-index: -1;
+
+                    &-img{
+                        display: inline;
+                        margin: 0 auto;
+                        margin-left: -25%;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .second-cropper{
+                    width: 10rem;
+                    height: 10rem;
+                    position: relative;
+                    top: -5rem;
+                    left: 60%;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    z-index: -1;
+
+                    &-img{
+                        display: inline;
+                        margin: 0 auto;
+                        margin-left: -25%;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+
+            &-actuality{
+                display: flex;
+                flex-flow: column nowrap;
+                width: 40%;
+                margin-bottom: 10rem;
+
+                &-news{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: end;
+                    gap: 1rem;
+
+                    &-title{
+                        font-size: 28px;
+                        font-weight: 800;
+                        text-align: end;
+                        margin-bottom: 0;
+                    }
+
+                    &-info{
+                        font-size: 24px;
+                        text-align: end;
+                        margin: 0;
+                    }
+                }
             }
         }
     }
