@@ -12,3 +12,14 @@ $font-geo-oblique: 'geosanslight-oblique';
 $font-roboto-bold: 'roboto-bold';
 $font-roboto-regular: 'roboto-regular';
 $font-edensor: 'edensor';
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+    xxxl: 1680px,
+    4xl: 1920px,
+);
