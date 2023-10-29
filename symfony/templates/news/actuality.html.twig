@@ -8,12 +8,26 @@
 {% block body %}
     {% include 'include/header.html.twig' %}
     {% include 'include/donation-menu.html.twig' %}
-        <div class="actuality lazyload-right">
+        <div class="actuality">
             {% include 'include/page-header.html.twig' %}
-            <div class="actuality-content">
-
+            <div class="actuality-content lazyload">
+                <div class="actuality-content-header">
+                    <div class="actuality-content-header-img">
+                        <img class="ellipse" src="{{ asset('build/img/home/hotnews/ellipse-hotnews.png') }}" alt="">
+                        <div class="principal-cropper">
+                            <img class="principal-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
+                        </div>
+                        <div class="second-cropper">
+                            <img class="second-cropper-img" src="{{ asset('build/img/home/hotnews/second-picture.jpg') }}" alt="">
+                        </div>
+                    </div>
+                    <h2 class="actuality-content-header-title">Une nouvelle école en construction</h2>
+                </div>
+                <div class="actuality-content-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem deserunt impedit tempore ut nulla laboriosam minus ullam vel eos repudiandae quia alias repellat et reprehenderit, optio corporis corrupti animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo architecto illo, placeat unde totam rerum vel velit corrupti porro molestias deserunt consequuntur fugit error iusto magni veniam maiores repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur provident aut voluptas! Veniam assumenda ea similique voluptatum praesentium dolorem, voluptatibus ullam, illo temporibus iure soluta officia et consequuntur ipsam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem deserunt impedit tempore ut nulla laboriosam minus ullam vel eos repudiandae quia alias repellat et reprehenderit, optio corporis corrupti animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo architecto illo, placeat unde totam rerum vel velit corrupti porro molestias deserunt consequuntur fugit error iusto magni veniam maiores repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur provident aut voluptas! Veniam assumenda ea similique voluptatum praesentium dolorem, voluptatibus ullam, illo temporibus iure soluta officia et consequuntur ipsam!</p>
+                </div>
             </div>
-            <div class="actuality-hotnews">
+            <div class="actuality-hotnews lazyload-right">
                 <div class="actuality-hotnews-container">
                     <div class="actuality-overlook actuality-overlook-activated">
                         <div class="actuality-overlook-cropper">
@@ -24,12 +38,13 @@
                             <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
                             <p class="actuality-overlook-info-date">10/10/23</p>
                             <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                            <a class="home-hotnews-button button button-yellow yellow" href="{{ path('app_news_detail', { slug: 'nouvelle-école' }) }}">
+                            <a class="button button-yellow yellow" href="">
                                 En savoir plus
                                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
                             </a>
                         </div>
                     </div>
+                    <hr class="lazyslow">
                     <div class="actuality-overlook">
                         <div class="actuality-overlook-cropper">
                             <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
@@ -38,7 +53,7 @@
                             <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
                             <p class="actuality-overlook-info-date">10/10/23</p>
                             <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                            <a class="home-hotnews-button button button-yellow yellow" href="">
+                            <a class="button button-yellow yellow" href="">
                                 En savoir plus
                                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
                             </a>
@@ -52,7 +67,7 @@
                             <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
                             <p class="actuality-overlook-info-date">10/10/23</p>
                             <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                            <a class="home-hotnews-button button button-yellow yellow" href="">
+                            <a class="button button-yellow yellow" href="">
                                 En savoir plus
                                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
                             </a>

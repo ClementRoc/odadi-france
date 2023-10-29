@@ -1,5 +1,5 @@
-{% if (pageTemplate == 'actuality') or (pageTemplate == 'news') %}
-    <div class="page-header">
+{% if pageTemplate == 'news' %}
+    <div class="page-header lazyload-right">
         <div class="page-header-button">
             <a class="button button-header" href="{{ path('app_home') }}">
                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
@@ -12,15 +12,15 @@
         </div>
         <h1 class="page-header-title">{{ pageTitle }}</h1>
     </div>
-    <hr>
-    <div class="page-filter">
+    <hr class="title-line">
+    <div class="page-filter lazyload-left">
         <select class="page-filter-button button button-filter yellow" href="">
             <option value="">Option de tri</option>
         </select>
         <input type="text" class="page-filter-button button button-filter yellow" placeholder="Recherche">
     </div>
 {% else %}
-    <div class="page-header">
+    <div class="page-header lazyload-right">
         <div class="page-header-button">
             <a class="button button-header" href="{{ path('app_home') }}">
                 <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
@@ -33,5 +33,5 @@
         </div>
         <h1 class="page-header-title">{{ pageTitle }}</h1>
     </div>
-    <hr>
+    <hr class="title-line">
 {% endif %}

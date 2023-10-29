@@ -1,5 +1,92 @@
 .actuality{
 
+    &-hotnews{
+        position: absolute;
+        top: 15rem;
+        right: 15rem;
+        width: 25%;
+
+        &-container{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 2rem;
+
+            .actuality-overlook{
+                width: fit-content;
+
+                &-cropper{
+                    width: 16rem;
+                }
+            }
+        }
+    }
+
+    &-content{
+        margin-top: 2rem;
+        width: 50%;
+
+        &-header{
+
+            &-title{
+                font-family: $font-roboto-bold;
+                text-align: center;
+            }
+
+            &-img{
+                position: relative;
+                top: 2rem;
+                left: 12%;
+
+                .ellipse{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .principal-cropper{
+                    width: 20rem;
+                    height: 20rem;
+                    position: relative;
+                    top: 2rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    z-index: -1;
+
+                    &-img{
+                        display: inline;
+                        margin: 0 auto;
+                        margin-left: -25%;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .second-cropper{
+                    width: 10rem;
+                    height: 10rem;
+                    position: relative;
+                    top: -12rem;
+                    left: 50%;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    z-index: -2;
+
+                    &-img{
+                        display: inline;
+                        margin: 0 auto;
+                        margin-left: -25%;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        &-text{
+            margin-top: 4rem;
+        }
+    }
+
     &-overlook{
         display: flex;
         flex-flow: row nowrap;
@@ -17,6 +104,25 @@
                 width: 100%;
                 height: 100%;
                 background-color: $green-opacity;
+            }
+
+            .actuality-overlook-info-preview{
+                font-size: 24px;
+                font-weight: 800;
+            }
+
+            .button{
+                cursor: text;
+                background-color: $green;
+                color: $white;
+                gap: 2rem;
+        
+                img{
+                    background-color: $green-light;
+                    transition-duration: 500ms;
+                    transform: rotate(-180deg);
+                    margin-right: .5rem;
+                }
             }
         }
 
