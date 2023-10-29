@@ -1,0 +1,22 @@
+.page-actuality{
+    
+    .actuality{
+
+        &-hotnews{
+            position: absolute;
+            top: 15rem;
+            right: 15rem;
+            width: 25%;
+
+            &-container{
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 2rem;
+
+                .actuality-overlook{
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}

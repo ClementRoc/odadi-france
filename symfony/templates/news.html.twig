@@ -1,6 +1,7 @@
 {% extends '_layout.html.twig' %}
 
 {% set pageTemplate = 'news' %}
+{% set pageTitle = 'Notre actualité' %}
 {% set titleTag = 'news.titleTag'|trans %}
 {% set metaDescription = 'news.metaDescription'|trans %}
 
@@ -8,26 +9,7 @@
     {% include 'include/header.html.twig' %}
     {% include 'include/donation-menu.html.twig' %}
     <div class="news lazyload-right">
-        <div class="news-header">
-            <div class="news-header-button">
-                <a class="button button-header" href="{{ path('app_home') }}">
-                    <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    <p>Accueil</p>
-                </a>
-                {# <a class="button button-header" href="">
-                    <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    <p>À la une</p>
-                </a> #}
-            </div>
-            <h1 class="news-header-title">Notre actualité</h1>
-        </div>
-        <hr>
-        <div class="news-filter">
-            <select class="news-filter-button button button-filter yellow" href="">
-                <option value="">Option de tri</option>
-            </select>
-            <input type="text" class="news-filter-button button button-filter yellow" placeholder="Recherche">
-        </div>
+        {% include 'include/page-header.html.twig' %}
         <div class="news-container">
             <div class="actuality-overlook">
                 <div class="actuality-overlook-cropper">
@@ -37,7 +19,7 @@
                     <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
                     <p class="actuality-overlook-info-date">10/10/23</p>
                     <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="home-hotnews-button button button-yellow yellow" href="">
+                    <a class="home-hotnews-button button button-yellow yellow" href="{{ path('app_news_detail', { slug: 'nouvelle-école' }) }}">
                         En savoir plus
                         <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
                     </a>

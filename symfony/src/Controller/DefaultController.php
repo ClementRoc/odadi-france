@@ -22,9 +22,17 @@ class DefaultController extends AbstractController
     /**
      * @Route("/actualités", name="app_news", methods="GET")
      */
-    public function actuality(): Response
+    public function news(): Response
     {
         return $this->render('news.html.twig');
+    }
+
+    /**
+     * @Route("/actualités/{slug}", name="app_news_detail", methods="GET")
+     */
+    public function actuality(string $slug): Response
+    {
+        return $this->render('news/actuality.html.twig');
     }
 
     /**

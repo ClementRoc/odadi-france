@@ -1,16 +1,15 @@
 {% extends '_layout.html.twig' %}
 
 {% set pageTemplate = 'history' %}
+{% set pageTitle = 'Histoire' %}
 {% set titleTag = 'history.titleTag'|trans %}
 {% set metaDescription = 'history.metaDescription'|trans %}
 
 {% block body %}
     {% include 'include/header.html.twig' %}
     {% include 'include/donation-menu.html.twig' %}
-    <div class="history">
-        <div class="history-header">
-            <h1>Notre histoire</h1>
-        </div>
+    <div class="history lazyload-right">
+        {% include 'include/page-header.html.twig' %}
     </div>
     {% include 'include/footer.html.twig' %}
 {% endblock %}

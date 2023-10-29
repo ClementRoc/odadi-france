@@ -1,0 +1,37 @@
+{% if (pageTemplate == 'actuality') or (pageTemplate == 'news') %}
+    <div class="page-header">
+        <div class="page-header-button">
+            <a class="button button-header" href="{{ path('app_home') }}">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p>Accueil</p>
+            </a>
+            {# <a class="button button-header" href="">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p>À la une</p>
+            </a> #}
+        </div>
+        <h1 class="page-header-title">{{ pageTitle }}</h1>
+    </div>
+    <hr>
+    <div class="page-filter">
+        <select class="page-filter-button button button-filter yellow" href="">
+            <option value="">Option de tri</option>
+        </select>
+        <input type="text" class="page-filter-button button button-filter yellow" placeholder="Recherche">
+    </div>
+{% else %}
+    <div class="page-header">
+        <div class="page-header-button">
+            <a class="button button-header" href="{{ path('app_home') }}">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p>Accueil</p>
+            </a>
+            {# <a class="button button-header" href="">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p>À la une</p>
+            </a> #}
+        </div>
+        <h1 class="page-header-title">{{ pageTitle }}</h1>
+    </div>
+    <hr>
+{% endif %}

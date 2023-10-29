@@ -1,7 +1,12 @@
 @import 'home';
 @import 'news';
+@import 'actuality';
 
 .page{
     position: relative;
     min-height: 100vh;
+
+    .lazyload-right{
+        padding: 8rem 15rem 17rem 27.5rem;
+    }
 }
