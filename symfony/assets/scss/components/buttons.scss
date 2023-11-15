@@ -33,6 +33,27 @@
                 margin-right: .5rem;
             }
         }
+
+        &--no-animation{
+
+            img{
+                border-radius: 50px;
+                background-color: $yellow-light;
+                padding: 0.5rem;
+                margin: 0;
+            }
+
+            &:hover{
+                background-color: $green;
+                color: $white;
+
+                img{
+                    background-color: $green-light;
+                    transition-duration: 500ms;
+                    transform: rotate(-180deg);
+                }
+            }
+        }
     }
 
     &-green{

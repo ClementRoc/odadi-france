@@ -1,7 +1,102 @@
 .page-history{
 
     .history{
-        display: flex;
-        flex-flow: row nowrap;
+
+        &-background{
+            position: absolute;
+            left: -55%;
+            bottom: 5%;
+            z-index: -1;
+        }
+
+        &-content{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 4rem;
+            margin-top: 4rem;
+
+            &-whoarewe{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+
+                &-background{
+                    position: absolute;
+                    left: 35%;
+                    opacity: 0.1;
+                    z-index: -1;
+                }
+
+                .presentation{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: end;
+
+                    &-title{
+                        font-size: 64px;
+                        font-family: $font-geo;
+                        font-weight: 100;
+                    }
+
+                    &-text{
+                        width: 50%;
+                        font-size: 24px;
+                        text-align: end;
+                    }
+                }
+            }
+
+            &-creation{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+    
+                .presentation{
+                    display: flex;
+                    flex-flow: column nowrap;
+    
+                    &-title{
+                        font-size: 64px;
+                        font-family: $font-geo;
+                        font-weight: 100;
+                    }
+    
+                    &-text{
+                        width: 80%;
+                        font-size: 24px;
+                        text-align: start;
+                    }
+                }
+            }
+
+            &-association{
+    
+                .presentation{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    text-align: end;
+    
+                    &-title{
+                        font-size: 64px;
+                        font-family: $font-geo;
+                        font-weight: 100;
+                    }
+    
+                    &-text{
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &-team{
+
+                &-title{
+                    font-size: 64px;
+                    font-family: $font-geo;
+                    font-weight: 100;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

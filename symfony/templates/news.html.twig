@@ -1,5 +1,7 @@
 {% extends '_layout.html.twig' %}
 
+{% import 'macro/actuality-overlook.html.twig' as actualityMacro %}
+
 {% set pageTemplate = 'news' %}
 {% set pageTitle = 'Notre actualité' %}
 {% set titleTag = 'news.titleTag'|trans %}
@@ -11,91 +13,8 @@
     <div class="news">
         {% include 'include/page-header.html.twig' %}
         <div class="news-container lazyload">
-            <div class="actuality-overlook">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="{{ path('app_news_detail', { slug: 'nouvelle-école' }) }}">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="actuality-overlook">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="actuality-overlook">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="actuality-overlook ag">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/logos/odadi.jpg') }}" alt="">
-                    <p class="actuality-overlook-cropper-ag">[AG]</p>
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="actuality-overlook">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="actuality-overlook">
-                <div class="actuality-overlook-cropper">
-                    <img class="actuality-overlook-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
-                </div>
-                <div class="actuality-overlook-info">
-                    <p class="actuality-overlook-info-title">Une nouvelle école en construction</p>
-                    <p class="actuality-overlook-info-date">10/10/23</p>
-                    <p class="actuality-overlook-info-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                </div>
-            </div>
+            {{ actualityMacro.actualityOverlook('', 'build/img/logos/odadi.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', '#', true) }}
+            {{ actualityMacro.actualityOverlook('', 'build/img/home/hotnews/principal-picture.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
         </div>
     </div>
     {% include 'include/footer.html.twig' %}

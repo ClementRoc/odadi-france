@@ -1,0 +1,26 @@
+{% macro actualityOverlook(class, img, title, date, preview, slug, ag) %}
+    <div class="actuality-overlook {{ class }}">
+        <div class="actuality-overlook-img">
+            <div class="actuality-overlook-img-cropper">
+                <img src="{{ asset(img) }}" alt="">
+            </div>
+            {% if ag == true %}
+            <div class="actuality-overlook-img-ag">
+                <a href="" download="AG-{{ date }}">
+                    <img class="lazyload" src="{{ asset('build/img/logos/downloads.png') }}" alt="">
+                </a>
+                <p>AG</p>
+            </div>
+            {% endif %}
+        </div>
+        <div class="actuality-overlook-info">
+            <p class="actuality-overlook-info-title">{{ title }}</p>
+            <p class="actuality-overlook-info-date">{{ date }}</p>
+            <p class="actuality-overlook-info-preview">{{ preview}}</p>
+            <a class="button button-yellow yellow" href="{{ path('app_news_detail', { slug: slug }) }}">
+                En savoir plus
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+            </a>
+        </div>
+    </div>
+{% endmacro %}
