@@ -12,6 +12,8 @@ home:
   name: Page d'accueil
   titleTag: Odadi France - Accueil
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
+  header: 
+    title: Aidez nous à développer <br>la communauté Malgache
 
 news: 
   name: Page d'actualité

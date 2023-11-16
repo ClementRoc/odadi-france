@@ -12,6 +12,12 @@
     {% include 'include/donation-menu.html.twig' %}
     <div class="news">
         {% include 'include/page-header.html.twig' %}
+        <div class="news-filter lazyload-left">
+            <select class="news-filter-button button button-filter yellow" href="">
+                <option value="">Option de tri</option>
+            </select>
+            <input type="text" class="news-filter-button button button-filter yellow" placeholder="Recherche">
+        </div>
         <div class="news-container lazyload">
             {{ actualityMacro.actualityOverlook('', 'build/img/logos/odadi.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', '#', true) }}
             {{ actualityMacro.actualityOverlook('', 'build/img/home/hotnews/principal-picture.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}

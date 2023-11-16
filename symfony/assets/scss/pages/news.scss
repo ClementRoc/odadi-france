@@ -2,6 +2,36 @@
 
     .news{
 
+        &-filter{
+            margin-top: 2.5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 3rem;
+
+            select{
+                appearance: none;  background-image: url("../img/logos/arrow.png");
+                background-repeat: no-repeat;
+                background-position: right 1rem top 50%;
+                background-size: 1rem auto;
+            }
+
+            input{ 
+                background-image: url("../img/logos/+.png");
+                background-repeat: no-repeat;
+                background-position: right 1rem top 50%;
+                background-size: 1rem auto;
+
+                &:focus,
+                &:hover{
+                    background-image: none;
+                }
+            }
+            
+            &-button{
+                height: 3.5rem;
+            }
+        }
+
         &-container{
             margin-top: 6.5rem;
             display: flex;

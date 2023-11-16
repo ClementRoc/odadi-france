@@ -1,5 +1,8 @@
 {% extends '_layout.html.twig' %}
 
+{% import 'macro/image.html.twig' as imageMacro %}
+{% import 'macro/button.html.twig' as buttonMacro %}
+
 {% set pageTemplate = 'history' %}
 {% set pageTitle = 'Histoire' %}
 {% set titleTag = 'history.titleTag'|trans %}
@@ -35,8 +38,40 @@
             </div>
             <div class="history-content-team">
                 <h1 class="history-content-team-title">TOUTE L'ÉQUIPE</h1>
+                <div class="history-content-team-member">
+                    {% set members = {
+                        clement: {
+                            'name' : 'Clément',
+                            'mail' : 'clement.roc@outlook.fr',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        },
+                        carla: {
+                            'name' : 'Carla',
+                            'mail' : 'carla.bouzon@icloud.com',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        },
+                        patrice: {
+                            'name' : 'Patrice',
+                            'mail' : 'capatroc@gmail.com',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        },
+                        martine: {
+                            'name' : 'Martine',
+                            'mail' : 'carla.bouzon@icloud.com',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        }
+                    } %}
+                    {% for member in members %}
+                    <div class="member">
+                        {{ imageMacro.imgMember(member.img, member.mail) }}
+                        <h1 class="member-text">{{ member.name }}</h1>
+                    </div>
+                    {% endfor %}
+                </div>
+                {{ buttonMacro.btnLink('history-content-team-button', 'yellow', 'app_contact', '', 'Nous contacter', 'build/img/logos/arrow.png') }}
             </div>
         </div>
     </div>
+    <img class="team-background" src="{{ asset('build/img/history/team/team-background.png') }}" alt="">
     {% include 'include/footer.html.twig' %}
 {% endblock %}

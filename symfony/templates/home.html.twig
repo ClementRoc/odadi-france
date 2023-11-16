@@ -1,5 +1,7 @@
 {% extends '_layout.html.twig' %}
 
+{% import 'macro/button.html.twig' as buttonMacro %}
+
 {% set pageTemplate = 'home' %}
 {% set titleTag = 'home.titleTag'|trans %}
 {% set metaDescription = 'home.metaDescription'|trans %}
@@ -12,7 +14,7 @@
         <div class="home-header">
             <img class="home-header-img" src="{{ asset('build/img/home/header/header-img.png') }}" alt="Madagascar">
             <img class="home-header-background" src="{{ asset('build/img/home/header/background.jpg') }}" alt="">
-            <h1 class="home-header-title">Aidez nous à développer <br>la communauté Malgache</h1>
+            <h1 class="home-header-title">{{ 'home.header.title'|trans|raw }}</h1>
         </div>
         <div class="home-actions">
             <h1 class="home-actions-title lazyload-right">Nos actions</h1>
@@ -50,10 +52,7 @@
                     </a>
                 </div>
             </div>
-            <a class="home-actions-button button button-yellow yellow" href="{{ path('app_actions') }}">
-                En savoir plus
-                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-            </a>
+            {{ buttonMacro.btnLink('home-actions-button', 'yellow', 'app_actions', '', 'En savoir plus', 'build/img/logos/arrow.png') }}
         </div>
         <div class="home-hotnews">
             <div class="home-hotnews-img">
@@ -70,14 +69,8 @@
                 <div class="home-hotnews-actuality-news">
                     <p class="home-hotnews-actuality-news-title">Une nouvelle école en construction</p>
                     <p class="home-hotnews-actuality-news-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis rerum quas quod quidem, architecto consequuntur quo quaerat ad ex natus dolorem aspernatur impedit quae reprehenderit hic, iste nihil doloribus!</p>
-                    <a class="button button-yellow yellow" href="">
-                        En savoir plus
-                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-                    </a>
-                    <a class="button button-yellow yellow" href="{{ path('app_news') }}">
-                        Plus d'articles
-                        <img src="{{ asset('build/img/logos/+.png') }}" alt="">
-                    </a>
+                    {{ buttonMacro.btnLink('', 'yellow', 'app_news_detail', 'nouvelle-école', 'En savoir plus', 'build/img/logos/arrow.png') }}
+                    {{ buttonMacro.btnLink('', 'yellow', 'app_news', '', 'Plus d\'articles', 'build/img/logos/+.png') }}
                 </div>
             </div>
         </div>

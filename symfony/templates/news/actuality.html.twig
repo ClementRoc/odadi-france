@@ -1,6 +1,7 @@
 {% extends '_layout.html.twig' %}
 
 {% import 'macro/actuality-overlook.html.twig' as actualityMacro %}
+{% import 'macro/button.html.twig' as btnMacro %}
 
 {% set pageTemplate = 'actuality' %}
 {% set pageTitle = 'À la une' %}
@@ -37,10 +38,7 @@
                         {{ actualityMacro.actualityOverlook('', 'build/img/home/hotnews/principal-picture.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
                         {{ actualityMacro.actualityOverlook('', 'build/img/home/actions/slides/nourriture.png', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
                         <div>
-                            <a class="actuality-hotnews-button button button-yellow--no-animation yellow" href="">
-                                Plus d'articles
-                                <img src="{{ asset('build/img/logos/+.png') }}" alt="">
-                            </a>
+                            {{ btnMacro.btnLink('actuality-hotnews-button', 'yellow', 'app_actions', '', 'Plus d\'articles', 'build/img/logos/+.png', false) }}
                         </div>
                     </div>
                 </div>

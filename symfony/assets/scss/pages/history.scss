@@ -4,8 +4,8 @@
 
         &-background{
             position: absolute;
-            left: -55%;
-            bottom: 5%;
+            left: -60%;
+            bottom: 30%;
             z-index: -1;
         }
 
@@ -89,6 +89,11 @@
             }
 
             &-team{
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 4rem;
+                justify-content: center;
+                position: relative;
 
                 &-title{
                     font-size: 64px;
@@ -96,7 +101,41 @@
                     font-weight: 100;
                     text-align: center;
                 }
+
+                &-member{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    gap: 20%;
+                    row-gap: 8rem;
+                    padding-bottom: 8rem;
+
+                    .member{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap: 2rem;
+                        align-items: center;
+
+                        &-text{
+                            margin-left: 2rem;
+                        }
+                    }
+                }
+
+                &-button{
+                    font-size: 18px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
             }
         }
+    }
+
+    .team-background{
+        position: absolute;
+        z-index: -2;
+        bottom: 0;
+        width: 100%;
     }
 }
