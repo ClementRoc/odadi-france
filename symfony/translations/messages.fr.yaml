@@ -19,3 +19,25 @@ news:
   name: Page d'actualité
   titleTag: Odadi France - Notre actualité
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
+
+actions:
+  name: Page des actions
+  titleTag: Odadi France - Nos actions
+  metaDescription: Association caritative qui a pour but de soutenir Madagascar
+
+history:
+  name: Nous connaître
+  titleTag: Odadi France - Notre histoire
+  metaDescription: Association caritative qui a pour but de soutenir Madagascar
+  whoweare:
+    presentation:
+      title: QUI SOMMES NOUS ?
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a maxime! Eius illum perferendis, magni laudantium vitae, dolorum ex sint minima earum, repellendus deleniti doloremque quibusdam cum vel impedit deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni vero autem ducimus, cum dolores, dignissimos vitae debitis sint aspernatur natus optio labore assumenda minus qui dolor officiis facilis sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet eius modi reiciendis minima quidem laudantium laborum sapiente adipisci cupiditate amet voluptatem, corrupti ea rem deleniti aut iusto autem libero.
+  creation:
+    presentation:
+      title: CRÉATION
+      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum distinctio illum eveniet sapiente perferendis excepturi corporis! Itaque, voluptatem voluptates molestias corrupti, quidem, illum ipsa pariatur quos error delectus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, ex deleniti. Voluptatem delectus consectetur ad ratione cum, autem dolor reprehenderit non aliquid nostrum voluptas eos, esse tempore repellendus sint tenetur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores consequuntur inventore reprehenderit aspernatur eveniet, obcaecati provident, excepturi quibusdam velit explicabo sit fugiat eligendi alias. Nam laboriosam fugit itaque atque consectetur?
+  association:
+    presentation:
+      title: ASSOCIATION MÈRE
+      text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur vitae soluta aperiam, sint impedit doloribus recusandae. Magnam temporibus, maiores, sequi omnis nulla aliquam, reprehenderit ab ex harum odit consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti deserunt aliquid quos beatae consequuntur maxime voluptatem natus tempore. Explicabo reprehenderit velit quo quos, aliquam sequi dolor saepe necessitatibus labore magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolor ex earum voluptatem beatae dolorem, minima ab quibusdam officiis commodi magni molestias vel odio mollitia illum id dolorum doloremque ratione?

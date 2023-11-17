@@ -10,6 +10,48 @@
     {% include 'include/donation-menu.html.twig' %}
     <div class="actions lazyload-right">
         {% include 'include/page-header.html.twig' %}
+        <div class="actions-formation">
+            <div class="actions-formation-presentation">
+                <p class="actions-formation-presentation-number huge-number">1</p>
+                <div class="actions-formation-presentation-text">
+                    <div class="actions-formation-presentation-text-info">
+                        <img class="actions-formation-presentation-text-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                        <h1 class="actions-formation-presentation-text-info-title">FORMATION</h1>
+                        <p class="actions-formation-presentation-text-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores expedita vero sit. Quidem, maiores laboriosam molestiae voluptatum natus, labore tempora mollitia incidunt suscipit voluptatibus reprehenderit vitae nemo aliquam unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio aliquam blanditiis qui a magnam, minima voluptas totam laudantium corrupti quasi quaerat cum provident explicabo animi cumque tempore. Necessitatibus, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio. Ea eligendi consectetur non et voluptates consequuntur fugit perferendis! Optio fugiat corrupti distinctio laborum alias assumenda ipsum natus illo veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum commodi totam asperiores, in quibusdam sint voluptatum, reiciendis corrupti nulla voluptatem necessitatibus dolorem? Quidem odit soluta vel quod maxime aspernatur hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ea odit quod consequuntur eum dicta voluptas asperiores iusto? Ex suscipit vitae alias inventore distinctio? Corrupti possimus aut quos modi sint?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExample" class="actions-formation-selector carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active formation-card">
+                        <div class="formation-card-header">
+                            <h1>0<strong>1</strong></h1>
+                            <p class="formation-card-header-title">Femme</p>
+                        </div>
+                        <div class="formation-card-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ea at quisquam illum, culpa ut ullam nam placeat ratione deserunt, laboriosam veniam rem libero officia beatae provident praesentium ducimus obcaecati!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item formation-card">
+                        <div class="formation-card-header">
+                            <h1>0<strong>1</strong></h1>
+                            <p class="formation-card-header-title">Femme</p>
+                        </div>
+                        <div class="formation-card-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ea at quisquam illum, culpa ut ullam nam placeat ratione deserunt, laboriosam veniam rem libero officia beatae provident praesentium ducimus obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
     </div>
     {% include 'include/footer.html.twig' %}
 {% endblock %}
