@@ -6,6 +6,10 @@
         flex-flow: column nowrap;
         gap: 6rem;
 
+        @include responsive-xxl{
+            padding: 6rem 15rem 17rem 15rem;
+        }
+
         h1{
             font-size: 56px;
             font-weight: 200;
@@ -16,6 +20,10 @@
             left: -55%;
             bottom: 0;
             z-index: -1;
+
+            @include responsive-xxl{
+                left: -80%;
+            }
         }
 
         &-header{
@@ -44,14 +52,15 @@
             width: 100%;
 
             &-title{
-                position: relative;
+                position: absolute;
                 left: 50%;
+                top: -3rem;
             }
 
             hr{
                 position: absolute;
-                right: -50%;
-                width: 100%;
+                right: -15rem;
+                width: 73%;
             }
 
             &-slides{

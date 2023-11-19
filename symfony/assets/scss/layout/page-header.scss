@@ -12,6 +12,10 @@
         display: flex;
         flex-flow: row nowrap;
         gap: 1rem;
+
+        p{
+            margin: 0;
+        }
     }
 }
 
@@ -19,6 +23,11 @@
     position: absolute;
     right: 0;
     width: 78%;
+    margin: 0;
+
+    @include responsive-xxl{
+        width: 84%;
+    }
 }
 
 .page-filter{

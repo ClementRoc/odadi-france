@@ -14,5 +14,9 @@
     .actions,
     .contact{
         padding: 8rem 15rem 17rem 27.5rem;
+
+        @include responsive-xxl{
+            padding: 8rem 15rem 17rem 15rem;
+        }
     }
 }

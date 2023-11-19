@@ -1,11 +1,12 @@
 .donation-menu{
     position: fixed;
-    left: 7.5rem;
+    left: 5.5rem;
     top: 15rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
     gap: 3rem;
+    z-index: 1000;
 
     .link-text{
         display: none;
