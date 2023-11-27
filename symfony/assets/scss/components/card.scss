@@ -1,8 +1,38 @@
-.formation-card{
+.card-container{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
 
-    &-header{
+    .card{
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;
+        gap: 3rem;
+        padding: 1rem;
+
+        &-header{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+    
+            &-number{
+                font-size: 128px;
+                font-family: $font-geo-oblique;
+                margin: 0;
+    
+                strong{
+                    font-family: $font-roboto-bold;
+                }
+            }
+    
+            &-title{
+                font-size: 64px;
+                font-family: $font-geo;
+                text-align: center;
+            }
+        }
+    
+        &-text{
+            font-size: 20px;
+        }
     }
 }

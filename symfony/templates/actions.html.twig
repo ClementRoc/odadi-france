@@ -9,47 +9,100 @@
     {% include 'include/header.html.twig' %}
     {% include 'include/donation-menu.html.twig' %}
     <div class="actions lazyload-right">
+        <img class="actions-background actions-background-left" src="{{ asset('build/img/home/background.png') }}" alt="">
+        <img class="actions-background actions-background-right" src="{{ asset('build/img/home/background.png') }}" alt="">
         {% include 'include/page-header.html.twig' %}
         <div class="actions-formation">
             <div class="actions-formation-presentation">
-                <p class="actions-formation-presentation-number huge-number">1</p>
-                <div class="actions-formation-presentation-text">
-                    <div class="actions-formation-presentation-text-info">
-                        <img class="actions-formation-presentation-text-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
-                        <h1 class="actions-formation-presentation-text-info-title">FORMATION</h1>
-                        <p class="actions-formation-presentation-text-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores expedita vero sit. Quidem, maiores laboriosam molestiae voluptatum natus, labore tempora mollitia incidunt suscipit voluptatibus reprehenderit vitae nemo aliquam unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio aliquam blanditiis qui a magnam, minima voluptas totam laudantium corrupti quasi quaerat cum provident explicabo animi cumque tempore. Necessitatibus, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio. Ea eligendi consectetur non et voluptates consequuntur fugit perferendis! Optio fugiat corrupti distinctio laborum alias assumenda ipsum natus illo veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum commodi totam asperiores, in quibusdam sint voluptatum, reiciendis corrupti nulla voluptatem necessitatibus dolorem? Quidem odit soluta vel quod maxime aspernatur hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ea odit quod consequuntur eum dicta voluptas asperiores iusto? Ex suscipit vitae alias inventore distinctio? Corrupti possimus aut quos modi sint?</p>
+                <img class="actions-formation-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                <div class="actions-formation-presentation-info">
+                    <p class="actions-formation-presentation-info-number huge-number">1</p>
+                    <div class="actions-formation-presentation-info-text">
+                        <h1 class="title">FORMATION</h1>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores expedita vero sit. Quidem, maiores laboriosam molestiae voluptatum natus, labore tempora mollitia incidunt suscipit voluptatibus reprehenderit vitae nemo aliquam unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio aliquam blanditiis qui a magnam, minima voluptas totam laudantium corrupti quasi quaerat cum provident explicabo animi cumque tempore. Necessitatibus, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit eum natus, reprehenderit incidunt reiciendis harum necessitatibus voluptates quaerat dolores, voluptate adipisci debitis quo optio earum, voluptatum ullam consequuntur. Magnam!</p>
                     </div>
                 </div>
             </div>
-            <div id="carouselExample" class="actions-formation-selector carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active formation-card">
-                        <div class="formation-card-header">
-                            <h1>0<strong>1</strong></h1>
-                            <p class="formation-card-header-title">Femme</p>
-                        </div>
-                        <div class="formation-card-text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ea at quisquam illum, culpa ut ullam nam placeat ratione deserunt, laboriosam veniam rem libero officia beatae provident praesentium ducimus obcaecati!</p>
+            <div class="actions-formation-selector card-container">
+                <div class="card">
+                    <div class="card-header">
+                        <p class="card-header-number">0<strong>1</strong></p>
+                        <h1 class="card-header-title">Femme</h1>
+                    </div>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
+                </div>
+            </div>
+        </div>
+        <div class="actions-food">
+            <div class="actions-food-background">
+                <img src="{{ asset('build/img/actions/ellipse.png') }}" alt="">
+            </div>
+            <div class="actions-food-header">
+                <p class="actions-food-header-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque quidem modi velit! Inventore mollitia nisi harum laborum vel. Repellat repudiandae ipsum dolor aperiam facilis vel nihil natus laudantium accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti nam sint necessitatibus deserunt voluptates iure aliquam debitis ea totam placeat consequuntur quisquam dolorem vitae at, eaque velit. Nobis, dolor.</p>
+                <div class="actions-food-header-title">
+                    <h1 class="number huge-number">2</h1>
+                    <h1 class="title">NOURRITURE</h1>
+                </div>
+            </div>
+            <hr class="actions-food-line">
+            <div class="actions-food-presentation">
+                <img class="actions-food-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                <div class="actions-food-presentation-text">
+                     <h1 class="title">Panier repas</h1>
+                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe, quisquam voluptatibus odit soluta, aliquam maxime, quos ut quasi culpa vero magni voluptas quam tempora! Porro nulla odio reiciendis eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo perspiciatis soluta quod minus quia maiores hic molestias dolore, esse corporis natus quasi velit iusto. Eaque voluptate atque minima nobis!</p>
+                </div>
+            </div>
+        </div>
+        <div class="actions-farming">
+            <div class="actions-farming-presentation">
+                <div class="actions-farming-presentation-header">
+                    <h1 class="number huge-number">3</h1>
+                    <div class="presentation">
+                        <h1 class="presentation-title">AGRICULTURE</h1>
+                        <p class="presentation-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam laborum doloremque, nobis praesentium repellat nihil fugiat vel ullam quibusdam tempora delectus molestiae! Molestiae nihil numquam, amet velit alias nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat porro sequi molestias pariatur obcaecati doloremque quasi dolores vero repellendus laboriosam, laudantium fugiat itaque dolore nulla facere molestiae sunt, error nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At soluta, ab id error itaque temporibus debitis ipsam quo autem dolorum nisi totam non aliquid tenetur eum enim aut commodi animi.</p>
+                    </div>
+                </div>
+                <div class="actions-farming-cards">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="card-header-number">0<strong>1</strong></p>
+                                <h1 class="card-header-title">Huiles Essentielles</h1>
+                            </div>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
                         </div>
                     </div>
-                    <div class="carousel-item formation-card">
-                        <div class="formation-card-header">
-                            <h1>0<strong>1</strong></h1>
-                            <p class="formation-card-header-title">Femme</p>
-                        </div>
-                        <div class="formation-card-text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ea at quisquam illum, culpa ut ullam nam placeat ratione deserunt, laboriosam veniam rem libero officia beatae provident praesentium ducimus obcaecati!</p>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="card-header-number">0<strong>2</strong></p>
+                                <h1 class="card-header-title">Apiculture</h1>
+                            </div>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+            </div>
+            <img class="actions-farming-img" src="{{ asset('build/img/actions/farming.png') }}" alt="">
+        </div>
+        <div class="actions-urban">
+            <div class="actions-urban-background">
+                <img src="{{ asset('build/img/actions/ellipse.png') }}" alt="">
+            </div>
+            <div class="actions-urban-header">
+                <p class="actions-urban-header-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque quidem modi velit! Inventore mollitia nisi harum laborum vel. Repellat repudiandae ipsum dolor aperiam facilis vel nihil natus laudantium accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti nam sint necessitatibus deserunt voluptates iure aliquam debitis ea totam placeat consequuntur quisquam dolorem vitae at, eaque velit. Nobis, dolor.</p>
+                <div class="actions-urban-header-title">
+                    <h1 class="number huge-number">4</h1>
+                    <h1 class="title">URBANISATION</h1>
+                </div>
+            </div>
+            <hr class="actions-urban-line">
+            <div class="actions-urban-presentation">
+                <img class="actions-urban-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                <div class="actions-urban-presentation-text">
+                     <h1 class="title">Nouvelle école</h1>
+                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe, quisquam voluptatibus odit soluta, aliquam maxime, quos ut quasi culpa vero magni voluptas quam tempora! Porro nulla odio reiciendis eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo perspiciatis soluta quod minus quia maiores hic molestias dolore, esse corporis natus quasi velit iusto. Eaque voluptate atque minima nobis!</p>
+                </div>
             </div>
         </div>
     </div>

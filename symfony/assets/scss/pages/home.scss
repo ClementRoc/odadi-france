@@ -59,8 +59,13 @@
 
             hr{
                 position: absolute;
-                right: -15rem;
-                width: 73%;
+                right: -27.5rem;
+                width: 93%;
+
+                @include responsive-xxl{
+                    right: -15rem;
+                    width: 73%;
+                }
             }
 
             &-slides{
