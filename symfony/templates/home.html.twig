@@ -21,31 +21,31 @@
             <hr class="lazyload-right">
             <div class="home-actions-slides">
                 <div class="home-actions-slides-left">
-                    <a href="" class="slide slide-green">
+                    <a href="{{ path('app_actions') }}#formation" class="slide slide-green">
                         <img src="{{ asset('build/img/home/actions/slides/formation.png') }}" alt="">
                         <p class="slide-text lazyload">FORMATION</p>
                         <div class="slide-background lazyload"></div>
                     </a>
-                    <a href="" class="slide slide-yellow">
+                    <a href="{{ path('app_actions') }}#urban" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/urbanisation.png') }}" alt="">
                         <p class="slide-text lazyload">URBANISATION</p>
                         <div class="slide-background lazyload"></div>
                     </a>
                 </div>
                 <div class="home-actions-slides-center">
-                    <a href="" class="slide slide-yellow">
+                    <a href="{{ path('app_actions') }}#food" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/nourriture.png') }}" alt="">
                         <p class="slide-text lazyload">NOURRITURE</p>
                         <div class="slide-background lazyload"></div>
                     </a>
                 </div>
                 <div class="home-actions-slides-right">
-                    <a href="" class="slide slide-yellow">
+                    <a href="{{ path('app_actions') }}#farming" class="slide slide-yellow">
                         <img src="{{ asset('build/img/home/actions/slides/apiculture.png') }}" alt="">
                         <p class="slide-text lazyload">APICULTURE</p>
                         <div class="slide-background lazyload"></div>
                     </a>
-                    <a href="" class="slide slide-green">
+                    <a href="{{ path('app_actions') }}#farming" class="slide slide-green">
                         <img src="{{ asset('build/img/home/actions/slides/agriculture.png') }}" alt="">
                         <p class="slide-text lazyload vertical">AGRICULTURE</p>
                         <div class="slide-background lazyload"></div>
@@ -67,9 +67,9 @@
             <div class="home-hotnews-actuality">
                 <h1 class="home-hotnews-actuality-title">À la une</h1>
                 <div class="home-hotnews-actuality-news">
-                    <p class="home-hotnews-actuality-news-title">Une nouvelle école en construction</p>
-                    <p class="home-hotnews-actuality-news-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius debitis rerum quas quod quidem, architecto consequuntur quo quaerat ad ex natus dolorem aspernatur impedit quae reprehenderit hic, iste nihil doloribus!</p>
-                    {{ buttonMacro.btnLink('', 'yellow', 'app_news_detail', 'nouvelle-école', 'En savoir plus', 'build/img/logos/arrow.png') }}
+                    <p class="home-hotnews-actuality-news-title">{{ hotnews.title }}</p>
+                    <p class="home-hotnews-actuality-news-info">{{ (hotnews.preview|raw)|nl2br }}</p>
+                    {{ buttonMacro.btnLink('', 'yellow', 'app_actuality', hotnews.slug, 'En savoir plus', 'build/img/logos/arrow.png') }}
                     {{ buttonMacro.btnLink('', 'yellow', 'app_news', '', 'Plus d\'articles', 'build/img/logos/+.png') }}
                 </div>
             </div>

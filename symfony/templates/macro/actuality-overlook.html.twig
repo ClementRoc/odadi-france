@@ -1,14 +1,14 @@
-{% macro actualityOverlook(class, img, title, date, preview, slug, ag) %}
+{% macro actualityOverlook(class, picture, title, category, date, preview, slug, AG) %}
     {% import 'macro/button.html.twig' as buttonMacro %}
-    <div class="actuality-overlook {{ class }}">
+    <div class="actuality-overlook {{ class }}" data-title="{{ title }}" data-date="{{ date }}" data-category="{{ category }}">
         <div class="actuality-overlook-img">
             <div class="actuality-overlook-img-cropper">
-                <img src="{{ asset(img) }}" alt="">
+                <img src="{{ picture.url }}" alt="{{ picture.fileName }}">
             </div>
-            {% if ag == true %}
+            {% if AG is not empty %}
             <div class="actuality-overlook-img-ag">
-                <a href="" download="AG-{{ date }}">
-                    <img class="lazyload" src="{{ asset('build/img/logos/downloads.png') }}" alt="">
+                <a href="{{ AG.url }}" download="{{ AG.fileName }}" target="_blank">
+                    <img class="lazyload" src="{{ asset('build/img/logos/downloads.png') }}" alt="{{ AG.fileName }}">
                 </a>
                 <p>AG</p>
             </div>
@@ -17,8 +17,8 @@
         <div class="actuality-overlook-info">
             <p class="actuality-overlook-info-title">{{ title }}</p>
             <p class="actuality-overlook-info-date">{{ date }}</p>
-            <p class="actuality-overlook-info-preview">{{ preview}}</p>
-            {{ buttonMacro.btnLink('', 'yellow', 'app_news_detail', slug, 'En savoir plus', 'build/img/logos/arrow.png') }}
+            <p class="actuality-overlook-info-preview">{{ (preview|raw)|nl2br }}</p>
+            {{ buttonMacro.btnLink('', 'yellow', 'app_actuality', slug, 'En savoir plus', 'build/img/logos/arrow.png') }}
         </div>
     </div>
 {% endmacro %}

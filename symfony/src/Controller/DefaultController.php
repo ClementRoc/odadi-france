@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Service\NewsService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,25 +15,11 @@ class DefaultController extends AbstractController
     /**
      * @Route("/", name="app_home", methods="GET")
      */
-    public function home(): Response
+    public function home(NewsService $newsService): Response
     {
-        return $this->render('home.html.twig');
-    }
-
-    /**
-     * @Route("/actualités", name="app_news", methods="GET")
-     */
-    public function news(): Response
-    {
-        return $this->render('news.html.twig');
-    }
-
-    /**
-     * @Route("/actualités/{slug}", name="app_news_detail", methods="GET")
-     */
-    public function actuality(string $slug): Response
-    {
-        return $this->render('news/actuality.html.twig');
+        return $this->render('home.html.twig', [
+            'hotnews' => $newsService->getHotnews(1)[0]
+        ]);
     }
 
     /**

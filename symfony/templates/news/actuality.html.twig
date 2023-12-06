@@ -5,7 +5,7 @@
 
 {% set pageTemplate = 'actuality' %}
 {% set pageTitle = 'À la une' %}
-{% set titleTag = 'actuality.titleTag'|trans %}
+{% set titleTag = actuality.title %}
 {% set metaDescription = 'actuality.metaDescription'|trans %}
 
 {% block body %}
@@ -19,24 +19,25 @@
                         <div class="actuality-content-header-img">
                             <img class="ellipse" src="{{ asset('build/img/home/hotnews/ellipse-hotnews.png') }}" alt="">
                             <div class="principal-cropper">
-                                <img class="principal-cropper-img" src="{{ asset('build/img/home/hotnews/principal-picture.jpg') }}" alt="">
+                                <img class="principal-cropper-img" src="{{ actuality.picture.url }}" alt="{{ actuality.picture.fileName }}">
                             </div>
                             <div class="second-cropper">
                                 <img class="second-cropper-img" src="{{ asset('build/img/home/hotnews/second-picture.jpg') }}" alt="">
                             </div>
                         </div>
-                        <h2 class="actuality-content-header-title">Une nouvelle école en construction</h2>
+                        <h2 class="actuality-content-header-title">{{ actuality.title }}</h2>
                     </div>
                     <div class="actuality-content-text">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem deserunt impedit tempore ut nulla laboriosam minus ullam vel eos repudiandae quia alias repellat et reprehenderit, optio corporis corrupti animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo architecto illo, placeat unde totam rerum vel velit corrupti porro molestias deserunt consequuntur fugit error iusto magni veniam maiores repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur provident aut voluptas! Veniam assumenda ea similique voluptatum praesentium dolorem, voluptatibus ullam, illo temporibus iure soluta officia et consequuntur ipsam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae rem deserunt impedit tempore ut nulla laboriosam minus ullam vel eos repudiandae quia alias repellat et reprehenderit, optio corporis corrupti animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo architecto illo, placeat unde totam rerum vel velit corrupti porro molestias deserunt consequuntur fugit error iusto magni veniam maiores repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur provident aut voluptas! Veniam assumenda ea similique voluptatum praesentium dolorem, voluptatibus ullam, illo temporibus iure soluta officia et consequuntur ipsam!</p>
+                        <p>{{ (actuality.content|raw)|nl2br }}</p>
                     </div>
                 </div>
                 <div class="actuality-hotnews lazyload-right">
                     <div class="actuality-hotnews-container">
-                        {{ actualityMacro.actualityOverlook('actuality-overlook-activated', 'build/img/home/hotnews/principal-picture.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
+                        {{ actualityMacro.actualityOverlook('actuality-overlook-activated', actuality.picture, actuality.title, actuality.category, actuality.date, actuality.preview, actuality.slug, actuality.AG) }}
                         <hr class="lazyslow">
-                        {{ actualityMacro.actualityOverlook('', 'build/img/home/hotnews/principal-picture.jpg', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
-                        {{ actualityMacro.actualityOverlook('', 'build/img/home/actions/slides/nourriture.png', 'Une nouvelle école en construction', '10/10/23', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt laborum quis?', 'nouvelle-école', false) }}
+                        {% for hotnew in hotnews %}
+                            {{ actualityMacro.actualityOverlook('', hotnew.picture, hotnew.title, hotnew.category, hotnew.date, hotnew.preview, hotnew.slug, hotnew.AG) }}
+                        {% endfor %}
                         <div>
                             {{ btnMacro.btnLink('actuality-hotnews-button', 'yellow', 'app_news', '', 'Plus d\'articles', 'build/img/logos/+.png', false) }}
                         </div>

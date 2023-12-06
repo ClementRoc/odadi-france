@@ -16,10 +16,11 @@
             }
 
             input{ 
-                background-image: url("../img/logos/+.png");
+                background-image: url("../img/logos/search.png");
                 background-repeat: no-repeat;
                 background-position: right 1rem top 50%;
                 background-size: 1rem auto;
+                color: black;
 
                 &:focus,
                 &:hover{
