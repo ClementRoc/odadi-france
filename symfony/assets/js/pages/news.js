@@ -1,3 +1,4 @@
+const $searchInput = $('.input-search')
 let $actualities = $('.actuality-overlook')
 let $actualitiesList = []
 
@@ -16,3 +17,12 @@ for (let i = 0; i < $actualities.length; i++) {
         $actualities[i].getAttribute('data-category'),
     ))
 }
+
+// Searchbar function
+$searchInput.on('input', e => {
+    const value = e.target.value
+    $actualitiesList.forEach(actuality => {
+        const isVisible = actuality.title.toLowerCase().includes(value.toLowerCase())
+        document.getElementById(actuality.title).classList.toggle('hide', !isVisible)
+    })
+})

@@ -1,13 +1,27 @@
 {% macro btnLink(class, color, path, slug, text, img, animated = true) %}
     {% if animated == false %}
-    <a class="{{ class }} button button-{{ color }}--no-animation {{ color }}" href="{{ path(path, { slug: slug }) }}">
-        {{ text }}
-        <img src="{{ asset(img) }}" alt="">
-    </a>
+        {% if slug is not empty %}
+            <a class="{{ class }} button button-{{ color }}--no-animation {{ color }}" href="{{ path(path, { slug: slug }) }}">
+                {{ text }}
+                <img src="{{ asset(img) }}" alt="">
+            </a>
+        {% else %}
+            <a class="{{ class }} button button-{{ color }}--no-animation {{ color }}" href="{{ path(path) }}">
+            {{ text }}
+                <img src="{{ asset(img) }}" alt="">
+            </a>
+        {% endif %}
     {% else %}
-    <a class="{{ class }} button button-{{ color }} {{ color }}" href="{{ path(path, { slug: slug }) }}">
-        {{ text }}
-        <img src="{{ asset(img) }}" alt="">
-    </a>
+        {% if slug is not empty %}
+            <a class="{{ class }} button button-{{ color }} {{ color }}" href="{{ path(path, { slug: slug }) }}">
+            {{ text }}
+                <img src="{{ asset(img) }}" alt="">
+            </a>
+        {% else %}
+            <a class="{{ class }} button button-{{ color }} {{ color }}" href="{{ path(path) }}">
+            {{ text }}
+                <img src="{{ asset(img) }}" alt="">
+            </a>
+        {% endif %}
     {% endif %}
 {% endmacro %}

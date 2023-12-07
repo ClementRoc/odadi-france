@@ -69,7 +69,40 @@
             }
 
             &-selector{
+                position: relative;
                 width: 30%;
+
+                .switch-button{
+                    position: absolute;
+                    top: 25%;
+                    width: 100%;
+
+                    .previous{
+                        position: absolute;
+                        left: -2rem;
+                        padding: 1rem;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+
+                        img{
+                            width: 2rem;
+                        }
+                    }
+
+                    .next{
+                        position: absolute;
+                        right: -2rem;
+                        padding: 1rem;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+
+                        img{
+                            width: 2rem;
+                        }
+                    }
+                }
             }
         }
 

@@ -1,6 +1,6 @@
 {% macro actualityOverlook(class, picture, title, category, date, preview, slug, AG) %}
     {% import 'macro/button.html.twig' as buttonMacro %}
-    <div class="actuality-overlook {{ class }}" data-title="{{ title }}" data-date="{{ date }}" data-category="{{ category }}">
+    <div id="{{ title }}" class="actuality-overlook {{ class }}" data-title="{{ title }}" data-date="{{ date }}" data-category="{{ category }}">
         <div class="actuality-overlook-img">
             <div class="actuality-overlook-img-cropper">
                 <img src="{{ picture.url }}" alt="{{ picture.fileName }}">

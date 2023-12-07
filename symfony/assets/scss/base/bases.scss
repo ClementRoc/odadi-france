@@ -36,5 +36,10 @@ hr{
 }
 
 .hidden{
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide{
+  display: none !important;
 }
