@@ -1,0 +1,120 @@
+.page-contact{
+
+    .contact{
+
+        &-header{
+            margin-top: 4rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            &-people{
+                width: 50%;
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 2rem;
+
+                &-title{
+                    font-size: 64px;
+                    font-family: $font-geo;
+                    font-weight: 200;
+                }
+
+                &-container{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 2rem;
+
+                    .people{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        gap: 2rem;
+
+                        p{
+                            margin: 0;
+                        }
+
+                        &-info{
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            gap: 0.5rem;
+                            
+                            a{
+                                text-decoration: none;
+                                color: black;
+
+                                p{
+                                    font-family: $font-roboto-bold;
+                                }
+                            }
+
+                            &-name,
+                            &-job{
+                                font-family: $font-roboto-regular;
+                            }
+
+                            &-mail,
+                            &-phone{
+                                display: flex;
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                gap: 1rem;
+
+                                img{
+                                    width: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-form{
+
+                .container-form{
+                    padding: 1rem 15rem 1rem 2rem;
+                    position: fixed;
+                    right: 0;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    gap: 1rem;
+                    width: 40%;
+                    border-radius: 30px 0 0 30px;
+
+                    input,
+                    textarea{
+                        width: 100%;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        font-family: $font-roboto-regular;
+                        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2),
+                        inset 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+                    }
+
+                    &-info{
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap: 1rem;
+
+                        input{
+                            height: 2rem;
+                        }
+                    }
+
+                    &-message{
+                        width: 100%;
+
+                        textarea{
+                            height: 15rem;
+                            resize: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

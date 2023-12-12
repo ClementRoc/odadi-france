@@ -10,6 +10,72 @@
     {% include 'include/donation-menu.html.twig' %}
     <div class="contact lazyload-right">
         {% include 'include/page-header.html.twig' %}
+        <div class="contact-header">
+            <div class="contact-header-people">
+                <h1 class="contact-header-people-title">A CONTACTER</h1>
+                <div class="contact-header-people-container">
+                    {% set peoples = {
+                        patrice: {
+                            'name' : 'Patrice',
+                            'job' : 'Président de l\'association',
+                            'mail' : 'capatroc@gmail.com',
+                            'phone' : '06 87 12 68 63',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        },
+                        clement: {
+                            'name' : 'Clément',
+                            'job' : 'Trésorier - Développeur Web',
+                            'mail' : 'clement.roc@outlook.fr',
+                            'phone' : '06 74 60 27 85',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        },
+                        carla: {
+                            'name' : 'Carla',
+                            'job' : 'Responsable communication',
+                            'mail' : 'carla.bouzon@icloud.com',
+                            'phone' : '06 74 60 27 85',
+                            'img' : 'build/img/history/member/member-empty.png'
+                        }
+                    } %}
+                    {% for people in peoples %}
+                    <div class="people">
+                        <img src="{{ asset(people.img) }}" alt="">
+                        <div class="people-info">
+                            <h1 class="people-info-name">{{ people.name }}</h1>
+                            <p class="people-info-job">{{ people.job }}</p>
+                            <a class="people-info-mail" href="mailto:{{ people.mail }}">
+                                <img src="{{ asset('build/img/logos/mail.png') }}" alt="">
+                                <p>{{ people.mail }}</p>
+                            </a>
+                            <a class="people-info-phone" href="tel:{{ people.phone }}">
+                                <img src="{{ asset('build/img/logos/telephone.png') }}" alt="">
+                                <p>{{ people.phone }}</p>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="contact-header-form">
+                <form action="" class="container-form yellow">
+                    <div class="container-form-info">
+                        <label for="" class="container-form-info-lastname">
+                            <input type="text" placeholder="Nom">
+                        </label>
+                        <label for="" class="container-form-info-firstname">
+                            <input type="text" placeholder="Prénom">
+                        </label>
+                        <label for="" class="container-form-info-mail">
+                            <input type="mail" placeholder="Adresse mail">
+                        </label>
+                    </div>
+                    <label for="" class="container-form-message">
+                        <textarea type="text" placeholder="Message"></textarea>
+                    </label>
+                    <button class="container-form-button button green">Soumettre le formulaire</button>
+                </form>
+            </div>
+        </div>
     </div>
     {% include 'include/footer.html.twig' %}
 {% endblock %}
