@@ -7,6 +7,11 @@
             display: flex;
             flex-flow: column nowrap;
             gap: 2rem;
+            width: 80%;
+
+            .input-search{
+                width: 100%;
+            }
 
             select{
                 appearance: none;  background-image: url("../img/logos/arrow.png");
@@ -31,6 +36,20 @@
             
             &-button{
                 height: 3.5rem;
+            }
+
+            .checkbox{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+
+                label > a > p{
+                    margin: 0;
+                }
+
+                label > a{
+                    gap: 0;
+                }
             }
         }
 

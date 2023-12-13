@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Service\NewsService;
+use App\Service\MembersService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,9 +34,11 @@ class DefaultController extends AbstractController
     /**
      * @Route("/histoire", name="app_history", methods="GET")
      */
-    public function history(): Response
+    public function history(MembersService $membersService): Response
     {
-        return $this->render('history.html.twig');
+        return $this->render('history.html.twig', [
+            // 'members' => $membersService->getMembers()
+        ]);
     }
 
     /**
@@ -43,6 +46,8 @@ class DefaultController extends AbstractController
      */
     public function contact(): Response
     {
-        return $this->render('contact.html.twig');
+        return $this->render('contact.html.twig', [
+            // 'members' => $membersService->getMembers()
+        ]);
     }
 }
