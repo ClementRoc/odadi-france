@@ -111,6 +111,10 @@
                         textarea{
                             height: 15rem;
                             resize: none;
+
+                            @include responsive-xxl{
+                                height: 10rem;
+                            }
                         }
                     }
                 }
