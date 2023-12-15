@@ -46,9 +46,10 @@ $nextCard.on('click', function() {
     $currentFormationCard.classList.add('hide')
     $currentFormationCard.classList.remove('active')
 })
-const $searchInput = $('.input-search')
-let $actualities = $('.actuality-overlook')
-let $actualitiesList = []
+const $searchInput = $('.input-search');
+const $filterCheckboxes = $('.input[type="checkbox"]');
+let $actualities = $('.actuality-overlook');
+let $actualitiesList = [];
 
 // Actuality class
 function Actuality(title, date, category) {
@@ -74,3 +75,33 @@ $searchInput.on('input', e => {
         document.getElementById(actuality.title).classList.toggle('hide', !isVisible)
     })
 })
+
+// Filter function to show actualities based on the checkboxes
+// [AG, InfoLetter and Actualities]
+$filterCheckboxes.on('change', function() {
+    let selectedFilters = {};
+
+    $filterCheckboxes.filter(':checked').each(function() {
+        if (!selectedFilters.hasOwnProperty(this.name)) {
+            selectedFilters[this.name] = [];
+        }
+        selectedFilters[this.name].push(this.value);
+    });
+
+    let $filteredResults = $('.actuality-overlook');
+
+    $.each(selectedFilters, function(name, filterValues) {
+        $filteredResults = $filteredResults.filter(function() {
+            let matched = false,
+                currentFilterValues = $(this).data('filters').split(' ');
+            $.each(currentFilterValues, function(_, currentFilterValue) {
+                if ($.inArray(currentFilterValue, filterValues) != -1) {
+                    matched = true;
+                    return false;
+                }
+            });
+        return matched;
+        });
+    });
+    $articles.hide().filter($filteredResults).show();
+});

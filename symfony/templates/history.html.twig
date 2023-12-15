@@ -39,31 +39,9 @@
             <div class="history-content-team">
                 <h1 class="history-content-team-title">TOUTE L'ÉQUIPE</h1>
                 <div class="history-content-team-member">
-                    {% set members = {
-                        clement: {
-                            'name' : 'Clément',
-                            'mail' : 'clement.roc@outlook.fr',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        },
-                        carla: {
-                            'name' : 'Carla',
-                            'mail' : 'carla.bouzon@icloud.com',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        },
-                        patrice: {
-                            'name' : 'Patrice',
-                            'mail' : 'capatroc@gmail.com',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        },
-                        martine: {
-                            'name' : 'Martine',
-                            'mail' : 'carla.bouzon@icloud.com',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        }
-                    } %}
                     {% for member in members %}
                     <div class="member">
-                        {{ imageMacro.imgMember(member.img, member.mail) }}
+                        {{ imageMacro.imgMember(member.picture, member.mail) }}
                         <h1 class="member-text">{{ member.name }}</h1>
                     </div>
                     {% endfor %}

@@ -9,6 +9,11 @@ class MemberDTO
     /**
      * @var string
      */
+    public $name;
+    
+    /**
+     * @var string
+     */
     public $picture;
 
     /**
@@ -29,5 +34,5 @@ class MemberDTO
     /**
      * @var string
      */
-    public $description;
+    public $citation;
 }

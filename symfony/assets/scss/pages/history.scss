@@ -16,7 +16,7 @@
         &-content{
             display: flex;
             flex-flow: column nowrap;
-            gap: 4rem;
+            gap: 8rem;
             margin-top: 4rem;
 
             &-whoarewe{
@@ -102,6 +102,7 @@
                 gap: 4rem;
                 justify-content: center;
                 position: relative;
+                left: -5.5rem;
 
                 &-title{
                     font-size: 64px;

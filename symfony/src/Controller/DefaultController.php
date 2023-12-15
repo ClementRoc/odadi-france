@@ -37,17 +37,17 @@ class DefaultController extends AbstractController
     public function history(MembersService $membersService): Response
     {
         return $this->render('history.html.twig', [
-            // 'members' => $membersService->getMembers()
+            'members' => $membersService->getMembers()
         ]);
     }
 
     /**
      * @Route("/contact", name="app_contact", methods="GET")
      */
-    public function contact(): Response
+    public function contact(MembersService $membersService): Response
     {
         return $this->render('contact.html.twig', [
-            // 'members' => $membersService->getMembers()
+            'members' => $membersService->getMembers()
         ]);
     }
 }

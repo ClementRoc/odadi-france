@@ -69,7 +69,11 @@ class NewsService
         $actualityDTO->slug         = $this->checkAttribute($item, 'slug');
         $actualityDTO->preview      = $this->contentfulService->getRichTextContent($this->checkAttribute($item, 'preview'));
         $actualityDTO->content      = $this->contentfulService->getRichTextContent($this->checkAttribute($item, 'content'));
-        $actualityDTO->AG           = $this->checkMedia($item, 'ag');
+        if (!$item->get('ag')) {
+            $actualityDTO->AG       = null;
+        } else {
+            $actualityDTO->AG       = $this->checkMedia($item, 'ag');
+        }
 
         return $actualityDTO;
     }

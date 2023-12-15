@@ -1,8 +1,8 @@
-{% macro imgMember(img, mail) %}
+{% macro imgMember(picture, mail) %}
     <a class="img-member" href="mailto:{{ mail }}">
         <img style="transform: rotate({{ random(0,180) }}deg)" class="ellipse" src="{{ asset('build/img/history/team/team-ellipse.png') }}" alt="">
         <div class="cropper">
-            <img class="cropper-img" src="{{ asset(img) }}" alt="">
+            <img class="cropper-img" src="{{ picture.url }}" alt="">
         </div>
     </a>
 {% endmacro %}

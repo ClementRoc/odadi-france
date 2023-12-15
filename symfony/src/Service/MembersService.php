@@ -38,11 +38,20 @@ class MembersService
     {
         $memberDTO = new MemberDTO();
 
-        $memberDTO->picture = $this->checkMedia($item, 'picture');
-        $memberDTO->phone = $this->checkAttribute($item, 'phone');
-        $memberDTO->mail = $this->checkAttribute($item, 'mail');
-        $memberDTO->job = $this->checkAttribute($item, 'job');
-        $memberDTO->description = $this->checkAttribute($item, 'description');
+        $memberDTO->name        = $this->checkAttribute($item, 'name');
+        if (!$item->get('picture')) {
+            $emptyPicture = new MediaDTO();
+            $emptyPicture->fileName = 'Empty';
+            $emptyPicture->url      = '/build/img/history/member/member-empty.png';
+            $emptyPicture->format   = 'Empty';
+            $memberDTO->picture     = $emptyPicture;
+        } else {
+            $memberDTO->picture     = $this->checkMedia($item, 'picture');
+        }
+        $memberDTO->phone       = $this->checkAttribute($item, 'phone');
+        $memberDTO->mail        = $this->checkAttribute($item, 'mail');
+        $memberDTO->job         = $this->checkAttribute($item, 'job');
+        $memberDTO->citation    = $this->checkAttribute($item, 'citation');
 
         return $memberDTO;
     }

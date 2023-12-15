@@ -8,7 +8,7 @@
             flex-flow: row nowrap;
             justify-content: space-between;
 
-            &-people{
+            &-member{
                 width: 50%;
                 display: flex;
                 flex-flow: column nowrap;
@@ -25,10 +25,14 @@
                     flex-flow: column nowrap;
                     gap: 2rem;
 
-                    .people{
+                    .member{
                         display: flex;
                         flex-flow: row nowrap;
                         gap: 2rem;
+
+                        img{
+                            max-width: 13rem;
+                        }
 
                         p{
                             margin: 0;
@@ -109,13 +113,17 @@
                         width: 100%;
 
                         textarea{
-                            height: 15rem;
+                            height: 13rem;
                             resize: none;
 
                             @include responsive-xxl{
                                 height: 10rem;
                             }
                         }
+                    }
+
+                    &-button{
+                        cursor: pointer;
                     }
                 }
             }

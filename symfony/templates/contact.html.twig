@@ -11,10 +11,10 @@
     <div class="contact lazyload-right">
         {% include 'include/page-header.html.twig' %}
         <div class="contact-header">
-            <div class="contact-header-people">
-                <h1 class="contact-header-people-title">A CONTACTER</h1>
-                <div class="contact-header-people-container">
-                    {% set peoples = {
+            <div class="contact-header-member">
+                <h1 class="contact-header-member-title">A CONTACTER</h1>
+                <div class="contact-header-member-container">
+                    {# {% set peoples = {
                         patrice: {
                             'name' : 'Patrice',
                             'job' : 'Président de l\'association',
@@ -36,20 +36,20 @@
                             'phone' : '06 74 60 27 85',
                             'img' : 'build/img/history/member/member-empty.png'
                         }
-                    } %}
-                    {% for people in peoples %}
-                    <div class="people">
-                        <img src="{{ asset(people.img) }}" alt="">
-                        <div class="people-info">
-                            <h1 class="people-info-name">{{ people.name }}</h1>
-                            <p class="people-info-job">{{ people.job }}</p>
-                            <a class="people-info-mail" href="mailto:{{ people.mail }}">
+                    } %} #}
+                    {% for member in members %}
+                    <div class="member">
+                        <img src="{{ member.picture.url }}" alt="">
+                        <div class="member-info">
+                            <h1 class="member-info-name">{{ member.name }}</h1>
+                            <p class="member-info-job">{{ member.job }}</p>
+                            <a class="member-info-mail" href="mailto:{{ member.mail }}">
                                 <img src="{{ asset('build/img/logos/mail.png') }}" alt="">
-                                <p>{{ people.mail }}</p>
+                                <p>{{ member.mail }}</p>
                             </a>
-                            <a class="people-info-phone" href="tel:{{ people.phone }}">
+                            <a class="member-info-phone" href="tel:{{ member.phone }}">
                                 <img src="{{ asset('build/img/logos/telephone.png') }}" alt="">
-                                <p>{{ people.phone }}</p>
+                                <p>{{ member.phone }}</p>
                             </a>
                         </div>
                     </div>

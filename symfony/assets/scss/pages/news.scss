@@ -36,6 +36,11 @@
             
             &-button{
                 height: 3.5rem;
+
+                &:has(.reset:checked){
+                    background-color: $green;
+                    color: $white;
+                }
             }
 
             .checkbox{
