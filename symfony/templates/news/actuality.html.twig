@@ -33,10 +33,10 @@
                 </div>
                 <div class="actuality-hotnews lazyload-right">
                     <div class="actuality-hotnews-container">
-                        {{ actualityMacro.actualityOverlook('actuality-overlook-activated', actuality.picture, actuality.title, actuality.category, actuality.date, actuality.preview, actuality.slug, actuality.AG) }}
+                        {{ actualityMacro.actualityOverlook('actuality-overlook-activated', actuality.picture, actuality.title, actuality.category, actuality.filter, actuality.date, actuality.preview, actuality.slug, actuality.AG) }}
                         <hr class="lazyslow">
                         {% for hotnew in hotnews %}
-                            {{ actualityMacro.actualityOverlook('', hotnew.picture, hotnew.title, hotnew.category, hotnew.date, hotnew.preview, hotnew.slug, hotnew.AG) }}
+                            {{ actualityMacro.actualityOverlook('', hotnew.picture, hotnew.title, hotnew.category, hotnew.filter, hotnew.date, hotnew.preview, hotnew.slug, hotnew.AG) }}
                         {% endfor %}
                         <div>
                             {{ btnMacro.btnLink('actuality-hotnews-button', 'yellow', 'app_news', '', 'Plus d\'articles', 'build/img/logos/+.png', false) }}

@@ -66,6 +66,13 @@ class NewsService
         $actualityDTO->date         = $this->checkAttribute($item, 'date');
         $actualityDTO->title        = $this->checkAttribute($item, 'title');
         $actualityDTO->category     = $this->contentfulService->transformCheckboxToString($this->checkAttribute($item, 'category'));
+        if ($actualityDTO->category == 'Assemblée Générale') {
+            $actualityDTO->filter = 'AG';
+        } elseif ($actualityDTO->category == 'Lettre d\'informations') {
+            $actualityDTO->filter = 'infoletter';
+        } elseif ($actualityDTO->category == 'Actualité') {
+            $actualityDTO->filter = 'news';
+        }
         $actualityDTO->slug         = $this->checkAttribute($item, 'slug');
         $actualityDTO->preview      = $this->contentfulService->getRichTextContent($this->checkAttribute($item, 'preview'));
         $actualityDTO->content      = $this->contentfulService->getRichTextContent($this->checkAttribute($item, 'content'));

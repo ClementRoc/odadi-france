@@ -27,6 +27,11 @@ class ActualityDTO
     /**
      * @var string
      */
+    public $filter;
+
+    /**
+     * @var string
+     */
     public $slug;
     
     /**

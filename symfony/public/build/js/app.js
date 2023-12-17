@@ -46,8 +46,9 @@ $nextCard.on('click', function() {
     $currentFormationCard.classList.add('hide')
     $currentFormationCard.classList.remove('active')
 })
+
 const $searchInput = $('.input-search');
-const $filterCheckboxes = $('.input[type="checkbox"]');
+const $filterCheckboxes = $('input[type="checkbox"]');
 let $actualities = $('.actuality-overlook');
 let $actualitiesList = [];
 
@@ -103,5 +104,5 @@ $filterCheckboxes.on('change', function() {
         return matched;
         });
     });
-    $articles.hide().filter($filteredResults).show();
+    $actualities.hide().filter($filteredResults).show();
 });
