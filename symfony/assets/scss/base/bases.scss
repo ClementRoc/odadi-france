@@ -43,3 +43,19 @@ hr{
 .hide{
   display: none !important;
 }
+
+.mobile{
+  display: none;
+
+  @include responsive-xs{
+    display: block;
+  }
+}
+
+.desktop{
+  display: block;
+
+  @include responsive-xs{
+    display: none;
+  }
+}

@@ -1,9 +1,12 @@
 <div class="header">
     <ul class="header-menu">
-        <li class="header-menu-list">
+        <ul class="header-menu-dropdown mobile">
+
+        </ul>
+        <li class="header-menu-list desktop">
             <a href="{{ path('app_news') }}">Actualités</a>
         </li>
-        <li class="header-menu-list">
+        <li class="header-menu-list desktop">
             <a href="{{ path('app_actions') }}">Nos actions</a>
         </li>
         <li class="header-menu-list">
@@ -11,10 +14,10 @@
                 <img src="{{ asset('build/img/logos/odadi.jpg') }}" alt="" class="header-menu-img">
             </a>
         </li>
-        <li class="header-menu-list">
+        <li class="header-menu-list desktop">
             <a href="{{ path('app_history') }}">Histoire</a>
         </li>
-        <li class="header-menu-list">
+        <li class="header-menu-list desktop">
             <a href="{{ path('app_contact') }}">Contact</a>
         </li>
     </ul>

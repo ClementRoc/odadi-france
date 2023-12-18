@@ -8,6 +8,10 @@
     gap: 3rem;
     z-index: 1000;
 
+    @include responsive-xs{
+        display: none;
+    }
+
     .link-text{
         display: none;
         margin: 0;

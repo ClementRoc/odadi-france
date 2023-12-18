@@ -10,9 +10,19 @@
             padding: 6rem 15rem 17rem 15rem;
         }
 
+        @include responsive-xs{
+            padding: 6rem 0 2rem 2rem;
+            gap: 3rem;
+        }
+
         h1{
             font-size: 56px;
             font-weight: 200;
+
+            @include responsive-xs{
+                font-size: 20px;
+                font-weight: 800;
+            }
         }
 
         &-background{
@@ -24,6 +34,12 @@
             @include responsive-xxl{
                 left: -80%;
             }
+
+            @include responsive-xs{
+                left: -42rem;
+                top: 32rem;
+                width: 250%;
+            }
         }
 
         &-header{
@@ -33,6 +49,17 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
+
+            @include responsive-xs{
+                padding-right: 2rem;
+            }
+
+            &-img{
+
+                @include responsive-xs{
+                    width: 10rem;
+                }
+            }
 
             &-title{
                 text-align: end;
@@ -44,6 +71,10 @@
                 left: 25%;
                 opacity: 0.1;
                 z-index: -1;
+
+                @include responsive-xs{
+                    width: 15rem;
+                }
             }
         }
 
@@ -55,6 +86,11 @@
                 position: absolute;
                 left: 50%;
                 top: -4rem;
+
+                @include responsive-xs{
+                    left: 30%;
+                    top: -2rem;
+                }
             }
 
             hr{
@@ -65,6 +101,12 @@
                 @include responsive-xxl{
                     right: -15rem;
                     width: 73%;
+                }
+
+                @include responsive-xs{
+                    right: 0;
+                    width: 70%;
+                    border: 1px solid black;
                 }
             }
 
@@ -81,12 +123,42 @@
                     display: flex;
                     flex-flow: column nowrap;
                     gap: 1rem;
+
+                    @include responsive-xs{
+                        display: none;
+                    }
+                }
+
+                &-mobile{
+                    display: none;
+
+                    @include responsive-xs{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        gap: 1rem;
+                        overflow: scroll;
+
+                        .slide{
+
+                            img{
+                                max-height: 11rem;
+                            }
+                        }
+                    }
+
+                    .farming-right{
+                        margin-right: 1rem;
+                    }
                 }
             }
 
             &-button{
                 position: absolute;
                 right: 0;
+
+                @include responsive-xs{
+                    right: 1.5rem;
+                }
             }
         }
 
@@ -96,6 +168,25 @@
             display: flex;
             flex-flow: row nowrap;
             gap: 5rem;
+
+            @include responsive-xs{
+                flex-flow: column nowrap;
+                gap: 2rem;
+                align-items: center;
+                padding-right: 2rem;
+                margin-top: 2rem;
+            }
+
+            hr{
+
+                @include responsive-xs{
+                    position: absolute;
+                    width: 64%;
+                    top: 2rem;
+                    right: 0;
+                    border: 1px solid black;
+                }
+            }
             
             &-img{
                 position: relative;
@@ -104,6 +195,10 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+
+                    @include responsive-xs{
+                        width: 10rem;
+                    }
                 }
 
                 .principal-cropper{
@@ -114,6 +209,11 @@
                     overflow: hidden;
                     border-radius: 50%;
                     z-index: -1;
+
+                    @include responsive-xs{
+                        width: 10rem;
+                        height: 10rem;
+                    }
 
                     &-img{
                         display: inline;
@@ -133,6 +233,12 @@
                     overflow: hidden;
                     border-radius: 50%;
                     z-index: -1;
+                    
+                    @include responsive-xs{
+                        width: 5rem;
+                        height: 5rem;
+                        top: -1rem;
+                    }
 
                     &-img{
                         display: inline;
@@ -150,23 +256,50 @@
                 width: 40%;
                 margin-bottom: 10rem;
 
+                @include responsive-xs{
+                    width: 100%;
+                    margin-bottom: 30rem;
+                }
+
+                &-title{
+
+                    @include responsive-xs{
+                        display: none;
+                    }
+                }
+
                 &-news{
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: end;
                     gap: 1rem;
 
+                    @include responsive-xs{
+                        align-items: end;
+                    }
+
                     &-title{
                         font-size: 28px;
                         font-weight: 800;
                         text-align: end;
                         margin-bottom: 0;
+
+                        @include responsive-xs{
+                            text-align: center;
+                            width: 100%;
+                            font-size: 20px;
+                        }
                     }
 
                     &-info{
                         font-size: 24px;
                         text-align: end;
                         margin: 0;
+
+                        @include responsive-xs{
+                            text-align: justify;
+                            font-size: 18px;
+                        }
                     }
                 }
             }

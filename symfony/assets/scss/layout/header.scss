@@ -6,6 +6,11 @@
     margin: 0;
     z-index: 1000;
 
+    @include responsive-xs{
+        padding: .5rem;
+        box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.4);
+    }
+
     a{
         text-decoration: none;
         color: black;
@@ -21,8 +26,16 @@
         margin: 0;
         padding: 0;
 
+        @include responsive-xs{
+            justify-content: center;
+        }
+
         &-img{
             width: 8rem;
+
+            @include responsive-xs{
+                width: 5rem;
+            }
         }
     }
 }

@@ -11,6 +11,18 @@
     color: black;
     width: 13.7rem;
 
+    @include responsive-xs{
+        width: 8rem;
+        font-size: 14px;
+        gap: .5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+        img{
+            width: 1.5rem;
+            padding: .3rem !important;
+        }
+    }
+
     &-yellow{
 
         img{
@@ -25,12 +37,20 @@
             color: $white;
             gap: 2rem;
             transition: gap 500ms;
+
+            @include responsive-xs{
+                gap: .5rem;
+            }
     
             img{
                 background-color: $green-light;
                 transition-duration: 500ms;
                 transform: rotate(-180deg);
                 margin-right: .5rem;
+
+                @include responsive-xs{
+                    margin-right: 0;
+                }
             }
         }
 
@@ -71,12 +91,20 @@
             color: black;
             gap: 2rem;
             transition: gap 500ms;
+
+            @include responsive-xs{
+                gap: .5rem;
+            }
     
             img{
                 background-color: $yellow-light;
                 transition-duration: 500ms;
                 transform: rotate(-180deg);
                 margin-right: .5rem;
+
+                @include responsive-xs{
+                    margin-right: 0;
+                }
             }
         }
     }

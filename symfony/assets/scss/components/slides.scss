@@ -19,6 +19,16 @@
         font-weight: 800;
         margin: 0;
         z-index: 999;
+
+        @include responsive-xs{
+            display: block;
+            font-size: 30px;
+            border: 1px solid $white;
+            word-wrap: break-word;
+            width: 5rem;
+            padding: 0.3rem;
+            text-align: center;
+        }
     }
 
     &:hover{
@@ -46,6 +56,10 @@
             width: 100%;
             height: 100%;
             background-color: $green-opacity;
+
+            @include responsive-xs{
+                display: block;
+            }
         }
     }
 
@@ -59,10 +73,18 @@
             width: 100%;
             height: 100%;
             background-color: $yellow-opacity;
+
+            @include responsive-xs{
+                display: block;
+            }
         }
 
         .slide-text{
             color: black;
+
+            @include responsive-xs{
+                color: $white;
+            }
         }
     }
 }

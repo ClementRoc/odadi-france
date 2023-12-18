@@ -14,29 +14,6 @@
             <div class="contact-header-member">
                 <h1 class="contact-header-member-title">A CONTACTER</h1>
                 <div class="contact-header-member-container">
-                    {# {% set peoples = {
-                        patrice: {
-                            'name' : 'Patrice',
-                            'job' : 'Président de l\'association',
-                            'mail' : 'capatroc@gmail.com',
-                            'phone' : '06 87 12 68 63',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        },
-                        clement: {
-                            'name' : 'Clément',
-                            'job' : 'Trésorier - Développeur Web',
-                            'mail' : 'clement.roc@outlook.fr',
-                            'phone' : '06 74 60 27 85',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        },
-                        carla: {
-                            'name' : 'Carla',
-                            'job' : 'Responsable communication',
-                            'mail' : 'carla.bouzon@icloud.com',
-                            'phone' : '06 74 60 27 85',
-                            'img' : 'build/img/history/member/member-empty.png'
-                        }
-                    } %} #}
                     {% for member in members %}
                     <div class="member">
                         <img src="{{ member.picture.url }}" alt="">
