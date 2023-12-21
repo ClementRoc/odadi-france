@@ -6,6 +6,10 @@
             font-size: 638px;
             font-family: $font-roboto-bold;
             margin: 0;
+
+            @include responsive-xs{
+                font-size: 64px;
+            }
         }
 
         &-background{
@@ -29,11 +33,19 @@
             flex-flow: row nowrap;
             justify-content: space-between;
 
+            @include responsive-xs{
+                flex-flow: column nowrap;
+            }
+
             &-presentation{
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
                 width: 60%;
+
+                @include responsive-xs{
+                    width: 100%;
+                }
 
                 &-img{
                     width: 60%;
@@ -50,6 +62,10 @@
                         position: absolute;
                         top: -13rem;
                         left: -3rem;
+
+                        @include responsive-xs{
+                            left: 0;
+                        }
                     }
 
                     &-text{
