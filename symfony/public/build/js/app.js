@@ -1,36 +1,38 @@
-class componentMenu {
-    constructor() {
-        this.menuToggler = $('.js-menu-toggler');
-        this.menuTogglerInner = this.menuToggler.find('.menu-toggler-inner');
-        this.menuAnimationWhite = $('.gsap--menu-animation-white');
-        this.menuAnimationSvg = $('.gsap--menu-animation-svg');
-        this.menuContent = $('.gsap--menu-content');
-        this.menuList = $('.gsap--menu-list');
-        this.menuListLink = $('.gsap--menu-list-link');
-        this.menuListAfter = $('.gsap--menu-list-after');
+$menu = $('.gsap--menu-content')[0];
+$menuList = $('.menu-content-list')[0];
+$menuSocial = $('.menu-content-social')[0];
+$headerMenu = $('.header-menu')[0];
+$togglerMenu = $('.js-menu-toggler');
+$togglerInner = $('.menu-toggler-inner')[0];
 
-        this.menu = $('.js-menu');
-        this.menuInner = $('.js-menu-inner');
-    }
+$togglerMenu.on('click', function() {
+    let $showDelay = 300, $hideDelay = 500;
+    let $menuEnterTimer, $menuLeaveTimer;
 
-    /**
-     * toggleMenu
-     */
-    toggleMenu() {
-        var self = this;
-        if (self.menuTogglerInner.hasClass('menu-toggler-inner--open')) {
-            self.menuTogglerInner.removeClass('menu-toggler-inner--open').addClass('menu-toggler-inner--close');
-            self.playOpeningAnimation();
-        } else if (self.menuTogglerInner.hasClass('menu-toggler-inner--close')) {
-            self.menuTogglerInner.removeClass('menu-toggler-inner--close').addClass('menu-toggler-inner--open');
-            self.menuList.addClass('gsap--menu-list--hidden-before');
-            self.playClosingAnimation();
-        }
+    if ($menu.style.display === 'block') {
+        $togglerInner.classList.remove('menu-toggler-inner--close')
+        $togglerInner.classList.add('menu-toggler-inner--open')
+        $menuList.classList.add('lazyload-out-left');
+        $menuSocial.classList.add('lazyload-out-right');
+        $menuEnterTimer = setTimeout(function() {
+            $menu.style.display = 'none';
+            $menuList.classList.remove('lazyload-out-left');
+            $menuSocial.classList.remove('lazyload-out-right');
+            $headerMenu.style.marginTop = '0';
+            $headerMenu.style.justifyContent = 'center';
+        }, $hideDelay)
+    } else {
+        $togglerInner.classList.remove('menu-toggler-inner--open')
+        $togglerInner.classList.add('menu-toggler-inner--close')
+        $menuLeaveTimer = setTimeout(function() {
+            $menu.style.display = 'block';
+            $menuList.classList.add('lazyload-left');
+            $menuSocial.classList.add('lazyload-right');
+            $headerMenu.style.marginTop = '-.5rem';
+            $headerMenu.style.justifyContent = 'unset';
+        }, $showDelay)
     }
-}
-$(document).ready(function() {
-    new componentMenu();
-});
+})
 const $previousCard = $('.previous')
 const $nextCard = $('.next')
 let $formationsCardList = [

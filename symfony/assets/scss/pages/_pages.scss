@@ -18,5 +18,9 @@
         @include responsive-xxl{
             padding: 8rem 15rem 17rem 15rem;
         }
+
+        @include responsive-xs{
+            padding: 6rem 2rem 2rem 2rem;
+        }
     }
 }

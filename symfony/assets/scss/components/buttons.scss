@@ -129,6 +129,10 @@
         border-radius: 50px;
         padding: 0.5rem 1rem 0.5rem 1rem;
 
+        @include responsive-xs{
+            width: 11rem;
+        }
+
         img{
             border-radius: 50px;
             background-color: $yellow-light;

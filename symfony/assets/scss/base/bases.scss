@@ -25,6 +25,10 @@ h6{
 
 hr{
   margin: 0;
+
+  @include responsive-xs{
+    border: 1px solid black;
+  }
 }
 
 .yellow{

@@ -1,44 +1,45 @@
 <div class="header">
     <ul class="header-menu">
-        <div class="gsap--header-navbar header-menu-dropdown mobile">
-            <button class="menu-toggler js-menu-toggler" aria-label="Menu Toggler">
+        <div class="menu mobile">
+            <button class="menu-toggler js-menu-toggler">
                 <div class="menu-toggler-inner menu-toggler-inner--open">
                     <div class="menu-toggler-icon menu-toggler-icon--top"></div>
                     <div class="menu-toggler-icon menu-toggler-icon--middle"></div>
                     <div class="menu-toggler-icon menu-toggler-icon--bottom"></div>
                 </div>
             </button>
-        </div>
-        <div class="gsap--menu-content">
-            <div class="menu-inner js-menu-inner">
+            <div class="gsap--menu-content">
                 <div class="menu-content">
-                    <div class="menu-content-inner">
-                        <div class="menu-content-left">
-                            <div class="menu-content-left-inner">
-                                <ul class="menu-content-list gsap--menu-list gsap--menu-list--hidden-before">
-                                    <li>
-                                        <a href="{{ path('app_news') }}" class="gsap--menu-list-link" data-hover="">
-                                            Actualités
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ path('app_actions') }}" class="gsap--menu-list-link" data-hover="">
-                                            Nos actions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ path('app_history') }}" class="gsap--menu-list-link" data-hover="">
-                                            Histoire
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ path('app_contact') }}" class="gsap--menu-list-link" data-hover="">
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <ul class="menu-content-list">
+                        <li>
+                            <a href="{{ path('app_home') }}" class="menu-list-link" data-hover="">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('app_news') }}" class="menu-list-link" data-hover="">
+                                Actualités
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('app_actions') }}" class="menu-list-link" data-hover="">
+                                Nos actions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('app_history') }}" class="menu-list-link" data-hover="">
+                                Histoire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('app_contact') }}" class="menu-list-link" data-hover="">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-content-social">
+                        <a href="{{ 'odadi.facebook'|trans }}" target="_blank"><img class="icon" src="{{ asset('build/img/logos/facebook.png') }}" alt="Facebook"></a>
+                        <a href="{{ 'odadi.instagram'|trans }}" target="_blank"><img class="icon" src="{{ asset('build/img/logos/insta.png') }}" alt="Instagram"></a>
                     </div>
                 </div>
             </div>

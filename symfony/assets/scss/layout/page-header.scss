@@ -3,9 +3,18 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
+    @include responsive-xs{
+        justify-content: unset;
+        gap: 26vw
+    }
+
     h1{
         font-size: 56px;
         font-weight: 200;
+
+        @include responsive-xs{
+            font-size: 28px;
+        }
     }
 
     &-button{
@@ -27,6 +36,10 @@
 
     @include responsive-xxl{
         width: 84%;
+    }
+
+    @include responsive-xs{
+        width: 58%;
     }
 }
 

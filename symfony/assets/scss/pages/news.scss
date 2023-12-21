@@ -9,6 +9,10 @@
             gap: 2rem;
             width: 70%;
 
+            @include responsive-xs{
+                width: 100%;
+            }
+
             .input-search{
                 width: 100%;
             }
@@ -48,6 +52,12 @@
                 flex-flow: row nowrap;
                 justify-content: space-between;
 
+                @include responsive-xs{
+                    flex-flow: column nowrap;
+                    gap: 1rem;
+                    width: fit-content;
+                }
+
                 label > a > p{
                     margin: 0;
                 }
@@ -64,6 +74,14 @@
             flex-flow: row wrap;
             justify-content: space-between;
             gap: 5rem;
+
+            @include responsive-xs{
+                flex-flow: column nowrap;
+                justify-content: unset;
+                margin-top: 4rem;
+                gap: 2rem;
+                margin-bottom: 30rem;
+            }
         }
     }
 }

@@ -37,5 +37,223 @@
                 width: 5rem;
             }
         }
+
+        .menu{
+            z-index: 10;
+
+            .gsap--menu-content{
+                height: 100vh;
+                width: 100vw;
+                display: none;
+            }
+        
+            &-toggler{
+                position: absolute;
+                display: flex;
+                border: 0;
+                outline: none;
+                background: 0;
+                cursor: pointer;
+                padding: 0;
+                left: 2rem;
+                top: 1rem;
+
+        
+                &-icon{
+                    position: absolute;
+                    border-radius: 25px;
+                    background-color: black;
+
+                    @include responsive-md {
+                        width: 50px;
+                        height: 5px;
+                    }
+        
+                    @include responsive-xs {
+                        width: 32px;
+                        height: 4px;
+                    }
+                }
+        
+                &-inner{
+                    position: relative;
+                    display: inline-block;
+
+                    @include responsive-md {
+                        width: 50px;
+                        height: 40px;
+                    }
+        
+                    @include responsive-xs {
+                        width: 32px;
+                        height: 28px;
+                    }
+        
+                    .menu-toggler-icon {
+                        &--top {
+                            top: 0;
+                        }
+        
+                        &--middle {
+                            top: 43%;
+                            margin: auto;
+                        }
+        
+                        &--bottom {
+                            bottom: 0;
+                        }
+                    }
+        
+                    &--close {
+                        .menu-toggler-icon {
+                            &--top {
+                                top: 0;
+                                transform-origin: center;
+                                animation-duration: .4s;
+                                animation-fill-mode: forwards;
+        
+                                @include responsive-md {
+                                    animation-name: TogglerTopOpenToClose-md;
+                                }
+        
+                                @include responsive-xs {
+                                    animation-name: TogglerTopOpenToClose-xs;
+                                }
+                            }
+        
+                            &--middle {
+                                top: 45%;
+                                animation-duration: .4s;
+                                animation-fill-mode: forwards;
+                                animation-name: TogglerMiddleOpenToClose;
+                            }
+        
+                            &--bottom {
+                                bottom: 0;
+                                transform-origin: center;
+                                animation-duration: .4s;
+                                animation-fill-mode: forwards;
+                                animation-name: TogglerBottomOpenToClose;
+                            }
+                        }
+                    }
+        
+                    &--open {
+                        .menu-toggler-icon {
+                            &--top {
+                                top: 0;
+                                transform-origin: center;
+                                animation-duration: .4s;
+                                animation-name: TogglerTopCloseToOpen;
+                            }
+        
+                            &--middle {
+                                top: 43%;
+                                margin: auto;
+                                animation-duration: .4s;
+                                animation-name: TogglerMiddleCloseToOpen;
+                            }
+        
+                            &--bottom {
+                                bottom: 0;
+                                animation-duration: .4s;
+                                animation-name: TogglerBottomCloseToOpen;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            &-content{
+                width: 100%;
+                height: 100%;
+                background-color: $white;
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 5rem 0 0 0;
+        
+                &-list{
+                    list-style: none;
+                    padding-left: 1rem;
+                    display: flex;
+                    flex-flow: column nowrap;
+
+                    li{
+                        padding: 1rem;
+                    }
+        
+                    .menu-list-link {
+                        font-size: 20px;
+                    }
+        
+                    .active{
+                        background-color: $green;
+                    }
+        
+                }
+        
+                &-social{
+                    position: fixed;
+                    bottom: 6rem;
+                    right: 1rem;
+        
+                    .icon{
+        
+                        @include responsive-md{
+                            width: 4rem;
+                        }
+        
+                        @include responsive-xs{
+                            width: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+@keyframes TogglerTopOpenToClose-xs {
+    0% { transform: translateZ(0) rotate(0deg); }
+    50% { transform: translate3d(0, 13px, 0) rotate(0deg); }
+    to { transform: translate3d(0, 13px, 0) scale(1.2) rotate(45deg); }
+}
+@keyframes TogglerTopOpenToClose-md {
+    0% { transform: translateZ(0) rotate(0deg); }
+    50% { transform: translate3d(0, 23px, 0) rotate(0deg); }
+    to { transform: translate3d(0, 23px, 0) scale(1.2) rotate(45deg); }
+}
+@keyframes TogglerMiddleOpenToClose {
+    60% { opacity: 1; }
+    70% { opacity: 0; }
+    to { opacity: 0; }
+}
+@keyframes TogglerBottomOpenToClose {
+    0% { transform: translateZ(0) rotate(0deg); }
+    50% { transform: translate3d(0, -11px, 0) rotate(0deg); }
+    to { transform: translate3d(0, -11px, 0) scale(1.2) rotate(-45deg); }
+}
+@keyframes TogglerTopCloseToOpen {
+    0% {
+        bottom: 10px;
+        transform: translate3d(0, 13px, 0) scale(1.2) rotate(45deg);
+    }
+    50% {
+        bottom: 10px;
+        transform: translate3d(0, 13px, 0) rotate(0deg);
+    }
+    to {
+        bottom: 5px;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes TogglerMiddleCloseToOpen {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes TogglerBottomCloseToOpen {
+    0% { transform: translateY(-11px) scale(1.2) rotate(-45deg); }
+    50% { transform: translateY(-11px) rotate(0deg); }
+    to { transform: translateY(0) rotate(0deg); }
 }
