@@ -12,9 +12,18 @@
             position: absolute;
             width: 50%;
 
+            @include responsive-xs{
+                width: 300%;
+            }
+
             &-left{
                 left: -28rem;
                 top: 28%;
+
+                @include responsive-xs{
+                    left: -49rem;
+                    top: 4rem;
+                }
             }
 
             &-right{
@@ -333,7 +342,7 @@
                     overflow: scroll;
 
                     .card-container{
-                        width: 18rem;
+                        min-width: 15rem;
                     }
                 }
             }

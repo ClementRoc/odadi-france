@@ -20,10 +20,31 @@
             margin-top: 4rem;
             margin-bottom: 30rem;
 
+            @include responsive-xs{
+                margin-top: 2rem;
+                gap: 1rem;
+            }
+
+            .presentation-title{
+
+                @include responsive-xs{
+                    font-size: 34px;
+                    font-family: $font-geo;
+                    font-weight: 100;
+                }
+            }
+
             &-whoarewe{
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-between;
+
+                &-img{
+
+                    @include responsive-xs{
+                        width: 10rem;
+                    }
+                }
 
                 &-background{
                     position: absolute;
