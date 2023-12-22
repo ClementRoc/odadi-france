@@ -18,6 +18,10 @@
                 font-size: 128px;
                 font-family: $font-geo-oblique;
                 margin: 0;
+
+                @include responsive-xs{
+                    font-size: 64px;
+                }
     
                 strong{
                     font-family: $font-roboto-bold;
@@ -28,6 +32,10 @@
                 font-size: 64px;
                 font-family: $font-geo;
                 text-align: center;
+
+                @include responsive-xs{
+                    font-size: 32px;
+                }
             }
         }
     

@@ -24,12 +24,12 @@
         align-items: center;
         list-style: none;
         padding: 0;
-        margin: 0 0 5rem 0;
 
         @include responsive-xs{
             flex-flow: row wrap;
             align-items: flex-start;
             gap: 1rem;
+            margin: 0 0 5rem 0;
 
             .postal-adress{
 

@@ -10,13 +10,13 @@
     {% include 'include/donation-menu.html.twig' %}
     <div class="actions lazyload-right">
         <img class="actions-background actions-background-left" src="{{ asset('build/img/home/background.png') }}" alt="">
-        <img class="actions-background actions-background-right" src="{{ asset('build/img/home/background.png') }}" alt="">
+        <img class="actions-background actions-background-right desktop" src="{{ asset('build/img/home/background.png') }}" alt="">
         {% include 'include/page-header.html.twig' %}
         <div class="actions-formation">
             <div id="formation" class="actions-formation-presentation">
                 <img class="actions-formation-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
                 <div class="actions-formation-presentation-info">
-                    <p class="actions-formation-presentation-info-number huge-number">1</p>
+                    <h2 class="actions-formation-presentation-info-number huge-number desktop">1</h2>
                     <div class="actions-formation-presentation-info-text">
                         <h1 class="title">FORMATION</h1>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores expedita vero sit. Quidem, maiores laboriosam molestiae voluptatum natus, labore tempora mollitia incidunt suscipit voluptatibus reprehenderit vitae nemo aliquam unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio aliquam blanditiis qui a magnam, minima voluptas totam laudantium corrupti quasi quaerat cum provident explicabo animi cumque tempore. Necessitatibus, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit eum natus, reprehenderit incidunt reiciendis harum necessitatibus voluptates quaerat dolores, voluptate adipisci debitis quo optio earum, voluptatum ullam consequuntur. Magnam!</p>
@@ -24,23 +24,23 @@
                 </div>
             </div>
             <div class="actions-formation-selector card-container">
-                <div id="1" class="card hide">
+                <div id="1" class="card active">
                     <div class="card-header">
-                        <p class="card-header-number">0<strong>1</strong></p>
+                        <h3 class="card-header-number">0<strong>1</strong></h3>
                         <h1 class="card-header-title">Femme</h1>
                     </div>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
                 </div>
-                <div id="2" class="card active">
+                <div id="2" class="card hide">
                     <div class="card-header">
-                        <p class="card-header-number">0<strong>2</strong></p>
+                        <h3 class="card-header-number">0<strong>2</strong></h3>
                         <h1 class="card-header-title">Femme</h1>
                     </div>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
                 </div>
                 <div id="3" class="card hide">
                     <div class="card-header">
-                        <p class="card-header-number">0<strong>3</strong></p>
+                        <h3 class="card-header-number">0<strong>3</strong></h3>
                         <h1 class="card-header-title">Femme</h1>
                     </div>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
@@ -62,7 +62,7 @@
             <div class="actions-food-header">
                 <p class="actions-food-header-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque quidem modi velit! Inventore mollitia nisi harum laborum vel. Repellat repudiandae ipsum dolor aperiam facilis vel nihil natus laudantium accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti nam sint necessitatibus deserunt voluptates iure aliquam debitis ea totam placeat consequuntur quisquam dolorem vitae at, eaque velit. Nobis, dolor.</p>
                 <div class="actions-food-header-title">
-                    <h1 id="food" class="number huge-number">2</h1>
+                    <h2 id="food" class="number huge-number desktop">2</h2>
                     <h1 class="title">NOURRITURE</h1>
                 </div>
             </div>
@@ -78,7 +78,7 @@
         <div class="actions-farming">
             <div class="actions-farming-presentation">
                 <div class="actions-farming-presentation-header">
-                    <h1 id="farming" class="number huge-number">3</h1>
+                    <h2 id="farming" class="number huge-number desktop">3</h2>
                     <div class="presentation">
                         <h1 class="presentation-title">AGRICULTURE</h1>
                         <p class="presentation-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam laborum doloremque, nobis praesentium repellat nihil fugiat vel ullam quibusdam tempora delectus molestiae! Molestiae nihil numquam, amet velit alias nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat porro sequi molestias pariatur obcaecati doloremque quasi dolores vero repellendus laboriosam, laudantium fugiat itaque dolore nulla facere molestiae sunt, error nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At soluta, ab id error itaque temporibus debitis ipsam quo autem dolorum nisi totam non aliquid tenetur eum enim aut commodi animi.</p>
@@ -88,7 +88,7 @@
                     <div class="card-container">
                         <div class="card">
                             <div class="card-header">
-                                <p class="card-header-number">0<strong>1</strong></p>
+                                <h3 class="card-header-number">0<strong>1</strong></h3>
                                 <h1 class="card-header-title">Huiles Essentielles</h1>
                             </div>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
@@ -97,7 +97,7 @@
                     <div class="card-container">
                         <div class="card">
                             <div class="card-header">
-                                <p class="card-header-number">0<strong>2</strong></p>
+                                <h3 class="card-header-number">0<strong>2</strong></h3>
                                 <h1 class="card-header-title">Apiculture</h1>
                             </div>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nobis quaerat laudantium asperiores, animi minima? Atque repellendus laboriosam distinctio impedit eius, dolore adipisci cumque nisi tempore quod dolor necessitatibus beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque autem dolorum quos, maxime veritatis aut sequi alias ducimus soluta corporis vero illum vitae ad quisquam ipsum dolorem fugit! Quasi, possimus?</p>
@@ -114,7 +114,7 @@
             <div class="actions-urban-header">
                 <p class="actions-urban-header-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque quidem modi velit! Inventore mollitia nisi harum laborum vel. Repellat repudiandae ipsum dolor aperiam facilis vel nihil natus laudantium accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti nam sint necessitatibus deserunt voluptates iure aliquam debitis ea totam placeat consequuntur quisquam dolorem vitae at, eaque velit. Nobis, dolor.</p>
                 <div class="actions-urban-header-title">
-                    <h1 id="urban" class="number huge-number">4</h1>
+                    <h2 id="urban" class="number huge-number desktop">4</h2>
                     <h1 class="title">URBANISATION</h1>
                 </div>
             </div>
