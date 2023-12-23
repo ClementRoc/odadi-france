@@ -49,9 +49,10 @@
                 flex-flow: column nowrap;
                 gap: 1rem;
                 align-items: start;
+                width: 100%;
 
                 iframe{
-                    width: 360px;
+                    width: 100%;
                 }
             }
 

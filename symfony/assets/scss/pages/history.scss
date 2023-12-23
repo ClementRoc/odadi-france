@@ -11,6 +11,13 @@
             left: -60%;
             bottom: 30%;
             z-index: -1;
+
+            @include responsive-xs{
+                left: -45rem;
+                bottom: unset;
+                top: 0;
+                width: 250%;
+            }
         }
 
         &-content{
@@ -28,7 +35,7 @@
             .presentation-title{
 
                 @include responsive-xs{
-                    font-size: 34px;
+                    font-size: 35px;
                     font-family: $font-geo;
                     font-weight: 100;
                 }
@@ -39,9 +46,14 @@
                 flex-flow: row nowrap;
                 justify-content: space-between;
 
+                @include responsive-xs{
+                    display: block;
+                }
+
                 &-img{
 
                     @include responsive-xs{
+                        float: left;
                         width: 10rem;
                     }
                 }
@@ -58,6 +70,10 @@
                     flex-flow: column nowrap;
                     align-items: end;
 
+                    @include responsive-xs{
+                        display: block;
+                    }
+
                     &-title{
                         font-size: 64px;
                         font-family: $font-geo;
@@ -72,29 +88,58 @@
                         @include responsive-xxl{
                             width: 80%;
                         }
+
+                        @include responsive-xs{
+                            width: 100%;
+                        }
                     }
                 }
             }
 
             &-creation{
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: row-reverse nowrap;
                 justify-content: space-between;
+
+                @include responsive-xs{
+                    display: block;
+                }
     
                 .presentation{
                     display: flex;
                     flex-flow: column nowrap;
+
+                    @include responsive-xs{
+                        display: block;
+                    }
     
                     &-title{
                         font-size: 64px;
                         font-family: $font-geo;
                         font-weight: 100;
+
+                        @include responsive-xs{
+                            font-size: 40px;
+                        }
                     }
     
                     &-text{
                         width: 80%;
                         font-size: 24px;
                         text-align: start;
+                        
+                        @include responsive-xs{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &-img{
+
+                    @include responsive-xs{
+                        float: right;
+                        width: 10rem;
+                        margin-top: 4rem;
                     }
                 }
             }
@@ -110,6 +155,10 @@
                         font-size: 64px;
                         font-family: $font-geo;
                         font-weight: 100;
+
+                        @include responsive-xs{
+                            font-size: 38px;
+                        }
                     }
     
                     &-text{
@@ -126,11 +175,20 @@
                 position: relative;
                 left: -5.5rem;
 
+                @include responsive-xs{
+                    gap: 4rem;
+                    left: 0;
+                }
+
                 &-title{
                     font-size: 64px;
                     font-family: $font-geo;
                     font-weight: 100;
                     text-align: center;
+
+                    @include responsive-xs{
+                        font-size: 40px;
+                    }
                 }
 
                 &-member{
@@ -141,14 +199,29 @@
                     row-gap: 8rem;
                     padding-bottom: 8rem;
 
+                    @include responsive-xs{
+                        padding-bottom: 6rem;
+                        row-gap: 4rem;
+                        column-gap: 0;
+                    }
+
                     .member{
                         display: flex;
                         flex-flow: column nowrap;
                         gap: 2rem;
                         align-items: center;
 
+                        @include responsive-xs{
+                            width: 9rem;
+                            justify-content: center;
+                        }
+
                         &-text{
                             margin-left: 2rem;
+
+                            @include responsive-xs{
+                                font-size: 20px;
+                            }
                         }
                     }
                 }
@@ -158,6 +231,10 @@
                     position: absolute;
                     right: 0;
                     bottom: 0;
+
+                    @include responsive-xs{
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -168,5 +245,9 @@
         z-index: -2;
         bottom: 0;
         width: 100%;
+
+        @include responsive-xs{
+            bottom: 24rem;
+        }
     }
 }

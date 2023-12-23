@@ -2,11 +2,27 @@
 
     .contact{
 
+        &-background{
+            position: absolute;
+            left: -42rem;
+            top: 2rem;
+            width: 250%;
+            z-index: -2;
+        }
+
         &-header{
             margin-top: 4rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+
+            @include responsive-xs{
+                flex-flow: column-reverse nowrap;
+                justify-content: normal;
+                gap: 2rem;
+                margin-bottom: 30rem;
+                margin-top: 2rem;
+            }
 
             &-member{
                 width: 50%;
@@ -14,10 +30,19 @@
                 flex-flow: column nowrap;
                 gap: 2rem;
 
+                @include responsive-xs{
+                    padding-right: 2rem;
+                    width: 100%;
+                }
+
                 &-title{
                     font-size: 64px;
                     font-family: $font-geo;
                     font-weight: 200;
+
+                    @include responsive-xs{
+                        font-size: 40px;
+                    }
                 }
 
                 &-container{
@@ -32,6 +57,10 @@
 
                         img{
                             max-width: 13rem;
+
+                            @include responsive-xs{
+                                max-width: 8rem;
+                            }
                         }
 
                         p{
@@ -43,6 +72,13 @@
                             flex-flow: column nowrap;
                             justify-content: center;
                             gap: 0.5rem;
+
+                            &-name{
+
+                                @include responsive-xs{
+                                    font-size: 24px;
+                                }
+                            }
                             
                             a{
                                 text-decoration: none;
@@ -50,6 +86,10 @@
 
                                 p{
                                     font-family: $font-roboto-bold;
+
+                                    @include responsive-xs{
+                                        font-size: 12px !important;
+                                    }
                                 }
                             }
 
@@ -65,8 +105,16 @@
                                 align-items: center;
                                 gap: 1rem;
 
+                                @include responsive-xs{
+                                    gap: .5rem;
+                                }
+
                                 img{
                                     width: 2rem;
+
+                                    @include responsive-xs{
+                                        width: 1rem;
+                                    }
                                 }
                             }
                         }
@@ -86,6 +134,13 @@
                     gap: 1rem;
                     width: 40%;
                     border-radius: 30px 0 0 30px;
+
+                    @include responsive-xs{
+                        padding: 1rem;
+                        position: static;
+                        width: 100%;
+                        right: 0;
+                    }
 
                     input,
                     textarea{

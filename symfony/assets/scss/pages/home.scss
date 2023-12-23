@@ -20,7 +20,7 @@
             font-weight: 200;
 
             @include responsive-xs{
-                font-size: 20px;
+                font-size: 28px;
                 font-weight: 800;
             }
         }
@@ -33,6 +33,12 @@
 
             @include responsive-xxl{
                 left: -80%;
+            }
+
+            @include responsive-md{
+                left: -69rem;
+                top: 55rem;
+                width: 200%;
             }
 
             @include responsive-xs{
@@ -64,6 +70,10 @@
             &-title{
                 text-align: end;
                 width: 40%;
+
+                @include responsive-xs{
+                    width: 50%;
+                }
             }
 
             &-background{
@@ -105,6 +115,7 @@
 
                 @include responsive-xs{
                     right: 0;
+                    top: .5rem;
                     width: 70%;
                 }
             }
@@ -123,15 +134,20 @@
                     flex-flow: column nowrap;
                     gap: 1rem;
 
+                    @include responsive-md{
+                        display: none;
+                    }
+
                     @include responsive-xs{
                         display: none;
                     }
                 }
 
-                &-mobile{
+                &-mobile,
+                &-pad{
                     display: none;
 
-                    @include responsive-xs{
+                    @include responsive-md{
                         display: flex;
                         flex-flow: row nowrap;
                         gap: 1rem;
@@ -140,7 +156,11 @@
                         .slide{
 
                             img{
-                                max-height: 11rem;
+                                height: 25rem;
+
+                                @include responsive-xs{
+                                    max-height: 11rem;
+                                }
                             }
                         }
                     }
@@ -180,8 +200,8 @@
 
                 @include responsive-xs{
                     position: absolute;
-                    width: 64%;
-                    top: 2rem;
+                    width: 66%;
+                    top: 2.5rem;
                     right: 0;
                     border: 1px solid black;
                 }

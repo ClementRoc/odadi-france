@@ -62,7 +62,19 @@ hr{
 .desktop{
   display: block;
 
+  @include responsive-md{
+    display: none;
+  }
+
   @include responsive-xs{
     display: none;
+  }
+}
+
+.pad{
+  display: none;
+
+  @include responsive-md{
+    display: block;
   }
 }

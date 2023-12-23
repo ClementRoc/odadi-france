@@ -9,6 +9,10 @@
         @include responsive-xxl{
             width: 11rem;
         }
+
+        @include responsive-xs{
+            width: 8rem;
+        }
     }
     
     .cropper{
@@ -25,6 +29,11 @@
             width: 8rem;
             height: 8rem;
         }
+
+        @include responsive-xs{
+            width: 6rem;
+            height: 6rem;
+        }
     
         &-img{
             display: inline;
@@ -34,6 +43,10 @@
 
             @include responsive-xxl{
                 width: 8rem;
+            }
+
+            @include responsive-xs{
+                width: 6rem;
             }
         }
     }
