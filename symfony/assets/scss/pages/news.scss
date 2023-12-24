@@ -9,7 +9,7 @@
             gap: 2rem;
             width: 70%;
 
-            @include responsive-xs{
+            @include responsive-md{
                 width: 100%;
             }
 
@@ -53,13 +53,17 @@
                 justify-content: space-between;
 
                 @include responsive-xs{
-                    flex-flow: column nowrap;
-                    gap: 1rem;
+                    flex-flow: row wrap;
+                    row-gap: 1rem;
                     width: fit-content;
                 }
 
                 label > a > p{
                     margin: 0;
+
+                    @include responsive-md{
+                        font-size: 16px;
+                    }
                 }
 
                 label > a{
@@ -74,6 +78,10 @@
             flex-flow: row wrap;
             justify-content: space-between;
             gap: 5rem;
+
+            @include responsive-md{
+                margin-bottom: 35rem;
+            }
 
             @include responsive-xs{
                 flex-flow: column nowrap;

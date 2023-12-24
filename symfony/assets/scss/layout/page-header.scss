@@ -5,7 +5,7 @@
 
     @include responsive-xs{
         justify-content: unset;
-        gap: 26vw
+        gap: 26vw;
     }
 
     h1{
@@ -38,37 +38,11 @@
         width: 84%;
     }
 
+    @include responsive-md{
+        width: 92%;
+    }
+
     @include responsive-xs{
-        width: 58%;
-    }
-}
-
-.page-filter{
-    margin-top: 2.5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 3rem;
-
-    select{
-        appearance: none;  background-image: url("../img/logos/arrow.png");
-        background-repeat: no-repeat;
-        background-position: right 1rem top 50%;
-        background-size: 1rem auto;
-    }
-
-    input{ 
-        background-image: url("../img/logos/+.png");
-        background-repeat: no-repeat;
-        background-position: right 1rem top 50%;
-        background-size: 1rem auto;
-
-        &:focus,
-        &:hover{
-            background-image: none;
-        }
-    }
-    
-    &-button{
-        height: 3.5rem;
+        width: 60%;
     }
 }

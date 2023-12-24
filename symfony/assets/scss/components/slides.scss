@@ -20,14 +20,20 @@
         margin: 0;
         z-index: 999;
 
-        @include responsive-xs{
+        @include responsive-md{
             display: block;
-            font-size: 30px;
             border: 1px solid $white;
             word-wrap: break-word;
+            width: 12rem;
+            font-size: 60px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @include responsive-xs{
+            font-size: 28px;
             width: 5rem;
             padding: 0.3rem;
-            text-align: center;
         }
     }
 
@@ -57,7 +63,7 @@
             height: 100%;
             background-color: $green-opacity;
 
-            @include responsive-xs{
+            @include responsive-md{
                 display: block;
             }
         }
@@ -74,7 +80,7 @@
             height: 100%;
             background-color: $yellow-opacity;
 
-            @include responsive-xs{
+            @include responsive-md{
                 display: block;
             }
         }
@@ -82,7 +88,7 @@
         .slide-text{
             color: black;
 
-            @include responsive-xs{
+            @include responsive-md{
                 color: $white;
             }
         }

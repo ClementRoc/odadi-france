@@ -29,7 +29,7 @@ h1{
 hr{
   margin: 0;
 
-  @include responsive-xs{
+  @include responsive-md{
     border: 1px solid black;
   }
 }
