@@ -9,6 +9,10 @@
         gap: 3rem;
         padding: 1rem;
 
+        @include responsive-md{
+            gap: 1.5rem;
+        }
+
         &-header{
             display: flex;
             flex-flow: column nowrap;
@@ -19,7 +23,7 @@
                 font-family: $font-geo-oblique;
                 margin: 0;
 
-                @include responsive-xs{
+                @include responsive-md{
                     font-size: 64px;
                 }
     
@@ -33,7 +37,7 @@
                 font-family: $font-geo;
                 text-align: center;
 
-                @include responsive-xs{
+                @include responsive-md{
                     font-size: 32px;
                 }
             }

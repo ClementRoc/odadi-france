@@ -5,7 +5,7 @@
         .huge-number{
             font-size: 638px;
             font-family: $font-roboto-bold;
-            margin: 0;
+            margin: 0; 
         }
 
         &-background{
@@ -51,9 +51,15 @@
                 align-items: center;
                 width: 60%;
 
+                @include responsive-md{
+                    width: 50%;
+                    align-items: start;
+                }
+
                 @include responsive-xs{
                     width: 100%;
                     gap: 2rem;
+                    align-items: center;
                 }
 
                 &-img{
@@ -84,7 +90,7 @@
                     &-text{
                         width: 70%;
 
-                        @include responsive-xs{
+                        @include responsive-md{
                             width: 100%;
                         }
 
@@ -94,8 +100,8 @@
                             font-weight: 200;
 
                             @include responsive-xs{
-                                font-size: 40px;
                                 text-align: center;
+                                font-size: 40px;
                             }
                         }
                     }
@@ -105,6 +111,11 @@
             &-selector{
                 position: relative;
                 width: 30%;
+                height: auto;
+
+                @include responsive-md{
+                    width: 40%;
+                }
 
                 @include responsive-xs{
                     width: 80%;
@@ -114,6 +125,10 @@
                     position: absolute;
                     top: 25%;
                     width: 100%;
+
+                    @include responsive-md{
+                        top: 10%;
+                    }
 
                     .previous{
                         position: absolute;
