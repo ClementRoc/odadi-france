@@ -6,6 +6,10 @@
     margin: 0;
     z-index: 1000;
 
+    @include responsive-xxl{
+        padding: 1rem 10rem 1rem 10rem;
+    }
+
     @include responsive-md{
         padding: 2rem;
         box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.4);

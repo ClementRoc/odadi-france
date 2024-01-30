@@ -8,6 +8,11 @@
     gap: 3rem;
     z-index: 1000;
 
+    @include responsive-xxl{
+        left: 3rem;
+        top: 10rem;
+    }
+
     @include responsive-md{
         bottom: 0;
         left: 0;

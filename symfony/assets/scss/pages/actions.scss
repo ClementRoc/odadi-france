@@ -5,12 +5,16 @@
         .huge-number{
             font-size: 638px;
             font-family: $font-roboto-bold;
-            margin: 0; 
+            margin: 0;
         }
 
         &-background{
             position: absolute;
             width: 50%;
+
+            @include responsive-md{
+                width: 150%;
+            }
 
             @include responsive-xs{
                 width: 250%;
@@ -168,6 +172,22 @@
             position: relative;
             width: 70%;
 
+            .huge-number{
+
+                @include responsive-md{
+                    display: block !important;
+                }
+
+                @include responsive-xs{
+                    display: none !important;
+                }
+            }
+
+            @include responsive-md{
+                margin-top: 4rem;
+                width: 100%;
+            }
+
             @include responsive-xs{
                 margin-top: 4rem;
                 width: 100%;
@@ -177,6 +197,13 @@
             &-background{
                 position: absolute;
                 z-index: -1000;
+
+                @include responsive-md{
+
+                    img{
+                        width: 85vw;
+                    }
+                }
 
                 @include responsive-xs{
                     left: 4rem;
@@ -195,9 +222,24 @@
                 gap: 4rem;
                 margin-top: 14rem;
 
+                @include responsive-md{
+                    margin-top: 8rem;
+                }
+
                 @include responsive-xs{
                     margin-top: 0;
                     flex-flow: column-reverse nowrap;
+                }
+
+                &-text{
+
+                    @include responsive-md{
+                        width: 50%;
+                    }
+
+                    @include responsive-xs{
+                        width: unset;
+                    }
                 }
 
                 &-title{
@@ -224,6 +266,10 @@
                         font-family: $font-geo;
                         font-weight: 200;
 
+                        @include responsive-md{
+                            font-size: 52px;
+                        }
+
                         @include responsive-xs{
                             font-size: 40px;
                         }
@@ -234,6 +280,10 @@
             &-line{
                 width: 170.9%;
                 border: 1px solid black;
+
+                @include responsive-md{
+                    width: 109%;
+                }
 
                 @include responsive-xs{
                     position: absolute;
@@ -258,14 +308,24 @@
                     position: relative; 
                     left: -3rem;
 
+                    @include responsive-md{
+                        width: 60%;
+                        height: 60%;
+                    }
+
                     @include responsive-xs{
                         left: 0;
                         width: 70%;
+                        height: unset;
                     }
                 }
 
                 &-text{
                     width: 30%;
+
+                    @include responsive-md{
+                        width: 100%;
+                    }
 
                     @include responsive-xs{
                         width: 100%;
@@ -279,6 +339,14 @@
 
                     .text{
                         font-size: 20px;
+
+                        @include responsive-md{
+                            font-size: 24px;
+                        }
+
+                        @include responsive-xs{
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -305,6 +373,10 @@
                 flex-flow: column nowrap;
                 gap: 2rem;
 
+                @include responsive-md{
+                    width: 100%;
+                }
+
                 @include responsive-xs{
                     width: 100%;
                 }
@@ -316,7 +388,12 @@
                     gap: 2rem;
                     position: relative;
 
+                    @include responsive-md{
+                        justify-content: start;
+                    }
+
                     @include responsive-xs{
+                        justify-content: end;
                         padding-right: 2rem;
                     }
 
@@ -331,6 +408,10 @@
                         flex-flow: column nowrap;
                         gap: 2rem;
                         width: 55%;
+
+                        @include responsive-md{
+                            width: 45%;
+                        }
 
                         @include responsive-xs{
                             gap: 0;
@@ -370,9 +451,15 @@
 
             &-img{
 
-                @include responsive-xs{
+                @include responsive-md{
+                    width: 40%;
+                    right: 4rem;
                     position: absolute;
+                }
+
+                @include responsive-xs{
                     top: 0;
+                    right: 0;
                     left: 4.5rem;
                     width: 13rem;
                     height: 13rem;
@@ -385,10 +472,10 @@
 
         &-urban{
 
-            @include responsive-xs{
+            @include responsive-md{
                 margin-bottom: 30rem;
             }
-
+            
             &-line{
 
                 @include responsive-xs{

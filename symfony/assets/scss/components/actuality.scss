@@ -111,7 +111,6 @@
         }
 
         &-activated{
-            
 
             .actuality-background{
                 position: absolute;
@@ -233,6 +232,10 @@
                 font-style: italic;
                 margin-top: 8px;
 
+                @include responsive-md{
+                    font-size: 20px;
+                }
+
                 @include responsive-xs{
                     font-size: 12px;
                 }
@@ -242,6 +245,10 @@
                 margin-top: 0;
                 max-height: 6rem;
                 overflow: hidden;
+
+                @include responsive-md{
+                    max-height: 7rem;
+                }
 
                 @include responsive-xs{
                     max-height: 2rem;

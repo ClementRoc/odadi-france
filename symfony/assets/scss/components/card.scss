@@ -45,6 +45,14 @@
     
         &-text{
             font-size: 20px;
+
+            @include responsive-md{
+                font-size: 24px;
+            }
+
+            @include responsive-xs{
+                font-size: 20px;
+            }
         }
     }
 }
