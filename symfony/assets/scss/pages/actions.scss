@@ -6,6 +6,10 @@
             font-size: 638px;
             font-family: $font-roboto-bold;
             margin: 0;
+
+            @include responsive-xxl{
+                font-size: 564px;
+            }
         }
 
         &-background{
