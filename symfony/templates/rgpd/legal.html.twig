@@ -1,0 +1,18 @@
+{% extends '_layout.html.twig' %}
+
+{% set pageTemplate = 'legal' %}
+{% set pageTitle = 'Mentions légales' %}
+{% set titleTag = 'legal.titleTag'|trans %}
+{% set metaDescription = 'legal.metaDescription'|trans %}
+
+{% block body %}
+    {% include 'include/header.html.twig' %}
+    {% include 'include/donation-menu.html.twig' %}
+        <div class="legal lazyload">
+            {% include 'include/page-header.html.twig' %}
+            <div class="legal-content">
+                <p class="text">{{ 'legal.content.text'|trans|raw }}</p>
+            </div>
+        </div>
+    {% include 'include/footer.html.twig' %}
+{% endblock %}

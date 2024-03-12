@@ -46,3 +46,18 @@ contact:
   name: Nous contacter
   titleTag: Odadi France - Nous contacter
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
+
+data:
+  name: Données personnelles
+  titleTag: Odadi France - Vos données personnelles
+  metaDescription: Association caritative qui a pour but de soutenir Madagascar
+  content:
+    title: Avis important sur le traitement des données en relation avec Google Analytics
+    text: Ce site utilise <strong>Google Analytics</strong>, un service d’analyse web fourni par <strong>Google Ireland Limited</strong>. Si l’organe responsable du traitement des données recueillies par ce site est basé hors de l’Espace économique européen et de la Suisse, alors le traitement des données associées à Google Analytics sera effectué par <strong>Google LLC</strong> (dont le siège est aux États-Unis). Google Ireland Limited et Google LLC sont dénommés ci-après « Google ».<br><br>Google Analytics utilise des « cookies », des fichiers textes enregistrés sur l’ordinateur du visiteur du site, afin d’analyser l’utilisation du site par ce dernier. Les informations générées par le cookie (incluant l’adresse IP tronquée) sur l’utilisation du site web sont transmises à et conservées par Google. Google LLC garantit de conserver un niveau de protection des données adéquat conformément aux clauses contractuelles européennes standard. Les données envoyées et couplées aux cookies de Google Analytics, telles que l’identifiant de l’utilisateur et l’identifiant publicitaire, seront automatiquement effacées au bout de 50 mois.<br><br> Les données ayant atteint la date limite de conservation sont supprimées automatiquement une fois par mois. Le visiteur du site peut refuser l’utilisation de cookies en sélectionnant l’option appropriée dans le navigateur. Il peut aussi empêcher Google de recueillir des informations (incluant son adresse IP) par les cookies et de les traiter en téléchargeant le plug-in suivant et en l’installant sur son navigateur Internet <a href='https://tools.google.com/dlpage/gaoptout'>https://tools.google.com/dlpage/gaoptout</a>.<br><br>Pour plus d’informations sur le traitement et l’utilisation des données par Google, les paramétrages et les possibilités de désactivation, veuillez consulter les Conditions d’utilisation de Google Analytics ou la politique de confidentialité de Google.
+
+legal:
+  name: Mentions légales
+  titleTag: Odadi France - Mentions légales
+  metaDescription: Association caritative qui a pour but de soutenir Madagascar
+  content:
+    text: A COMPLETER (PREND EXEMPLE FSCF)

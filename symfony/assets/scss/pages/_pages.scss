@@ -1,4 +1,6 @@
 @import 'home';
+@import 'data';
+@import 'legal';
 @import 'news';
 @import 'history';
 @import 'actions';
@@ -28,7 +30,9 @@
     .actuality,
     .history,
     .actions,
-    .contact{
+    .contact,
+    .data,
+    .legal{
         padding: 8rem 15rem 17rem 27.5rem;
 
         @include responsive-xxl{

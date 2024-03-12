@@ -1,0 +1,19 @@
+.page-data{
+
+    .data{
+
+        &-content{
+            margin-top: 8rem;
+
+            .title{
+                font-family: $font-geo;
+                font-size: 40px;
+            }
+
+            .text{
+                margin-top: 4rem;
+                font-size: 24px;
+            }
+        }
+    }
+}
