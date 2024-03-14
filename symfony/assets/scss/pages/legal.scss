@@ -4,6 +4,48 @@
 
         &-content{
             margin-top: 4rem;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 4rem;
+
+            @include responsive-md{
+                margin-bottom: 24rem;
+                gap: 2rem;
+            }
+
+            p,
+            li{
+                font-size: 24px;
+
+                @include responsive-md{
+                    font-size: 16px;
+                }
+            }
+
+
+            .editor{
+
+                &-title{
+                    font-family: $font-geo;
+                    font-size: 40px;
+
+                    @include responsive-md{
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .creator{
+
+                &-title{
+                    font-family: $font-geo;
+                    font-size: 40px;
+
+                    @include responsive-md{
+                        font-size: 24px;
+                    }
+                }
+            }
         }
     }
 }

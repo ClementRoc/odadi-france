@@ -11,7 +11,22 @@
         <div class="legal lazyload">
             {% include 'include/page-header.html.twig' %}
             <div class="legal-content">
-                <p class="text">{{ 'legal.content.text'|trans|raw }}</p>
+                <div class="editor">
+                    <h1 class="editor-title">{{ 'legal.content.editor.title'|trans }}</h1>
+                    <p class="editor-text">{{ 'legal.content.editor.text'|trans }}</p>
+                    <ul class="editor-list">
+                        <li><strong>Personne morale : </strong>{{ 'legal.content.editor.moral-person'|trans }}</li>
+                        <li><strong>Raison sociale : </strong>{{ 'legal.content.editor.social-reason'|trans }}</li>
+                        <li><strong>Siège social : </strong>{{ 'legal.content.editor.qg'|trans }}</li>
+                    </ul>
+                </div>
+                <div class="creator">
+                    <h1 class="creator-title">{{ 'legal.content.creator.title'|trans }}</h1>
+                    <ul class="creator-list">
+                        <li><strong>Personne morale : </strong>{{ 'legal.content.creator.moral-person'|trans }}</li>
+                        <li><strong>Siège social : </strong>{{ 'legal.content.creator.qg'|trans }}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     {% include 'include/footer.html.twig' %}

@@ -5,14 +5,27 @@
         &-content{
             margin-top: 8rem;
 
+            @include responsive-md{
+                margin-top: 4rem;
+                margin-bottom: 28rem;
+            }
+
             .title{
                 font-family: $font-geo;
                 font-size: 40px;
+
+                @include responsive-md{
+                    font-size: 24px;
+                }
             }
 
             .text{
                 margin-top: 4rem;
                 font-size: 24px;
+
+                @include responsive-md{
+                    margin-top: 2rem;
+                }
             }
         }
     }

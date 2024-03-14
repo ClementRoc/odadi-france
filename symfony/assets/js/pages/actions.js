@@ -2,8 +2,7 @@ const $previousCard = $('.previous')
 const $nextCard = $('.next')
 let $formationsCardList = [
     document.getElementById('1'),
-    document.getElementById('2'),
-    document.getElementById('3')
+    document.getElementById('2')
 ]
 let $formationsCard = $('.card')
 

@@ -24,6 +24,36 @@ actions:
   name: Page des actions
   titleTag: Odadi France - Nos actions
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
+  formation:
+    presentation: <strong>ODADI</strong> s’est installé en milieu rural pour une raison première, aider les ruraux à améliorer leurs conditions de vie. <br><br>Pour cela, l’association s’est installée sur un terrain que la présidente connait bien, le <strong>Centre Patrakala.</strong> A l'aide des personnes qu’elle a côtoyé une grande partie de sa vie, la confiance s’est instaurée entre les ruraux et elle.<br><br> Le centre propose <strong>toutes sortes de formations</strong> pour les femmes (alphabétisation, santé, nutrition, planification familiale, <strong>couture</strong>, <strong>vannerie</strong> et cuisine).
+    cards:
+      first:
+        title: Couture
+        presentation: Elles sont proposées <strong>depuis 2012</strong>. Plusieurs groupe de femmes ont pu bénéficier de ces formations. Les formations sont divisées en 2 groupes, le groupe des débutantes et le groupe des confirmés.<br><br>Le groupe des couturières débutantes (formation de base) commence par apprendre à se servir des <strong>machines à coudre à mains</strong>, à coudre les différents points de couture et se sont initiées à la <strong>broderie</strong>. A la fin du cursus, elles reçoivent une <strong>attestation</strong> prouvant leur présence aux formations couture.
+      second:
+        title: Vannerie
+        presentation: En <strong>2019</strong> les femmes ont émis le souhait d’être formé à la vannerie. <br><br>Elles ont ainsi confectionné des <strong>sacs</strong>, des <strong>chapeaux</strong> et des petits <strong>paniers.</strong>
+  food:
+    header:
+      text: Nous participons activement au développement de la <strong>cantine</strong> du Centre Patrakala, pour cela nous effectuons un virement trimestriel afin d'aider <strong>ODADI</strong> à nourrir toutes les âmes du centre ! <br> Vos dons nous permettrons de maintenir ces <strong>virements essentielles</strong> au bon fonctionnement et la santé des personnes sur place !
+    presentation:
+      title: Cantine scolaire
+      text: La cantine scolaire permet de <strong>nourrir une centaine d'enfants</strong> 4 fois par mois (300g de riz et 80g de poisson/poulet par enfant)
+  farming:
+    presentation: <strong>ODADI</strong> a souhaité démarrer son projet de développement dans un domaine bien précis, <strong>l’agriculture</strong>. <br><br> <strong>98%</strong> des personnes vivant en milieu rural cultivent la terre, souvent pour leur consommation personnelle mais aussi pour le commerce. <br><br> Avec un centre rural où des <strong>techniques agricoles nouvelles et modernes</strong> sont développées ainsi que des techniciens agricoles formés, l’association apportent aux ruraux une <strong>aide précieuse</strong>. Le fait de posséder des champs et de les cultiver, de subir les mêmes problèmes que les ruraux assoit la crédibilité de l’association.
+    cards:
+      first:
+        title: Huiles Essentielles
+        presentation: En 2012, une unité de distillation a été créée au <strong>Centre Patrakala</strong> de l’association <strong>ODADI</strong>. Cette installation utilise le principe de la distillation à la vapeur pour produire Huiles Essentielles et Eaux Florales. <br><br>Les plantes distillées poussent au <strong>Centre Patrakala</strong> et ses alentours, dans un environnement naturel.
+      second:
+        title: Apiculture
+        presentation: L’apiculture tient également une place importante au centre puisque l’association possède un rucher destiné à produire du miel et le vendre, dans l’objectif pour <strong>ODADI</strong> d’être autonome financièrement.
+  urbanisation:
+    header:
+      text: Le <strong>Centre Patrakala</strong> (qui signifie "goutte d’eau")  désigne avant tout une <strong>aventure humaine et un objectif</strong>. C’est l’envie d’un groupe de personne d’aider les ruraux malgache dans l’amélioration de leur <strong>condition de vie</strong> et vers le <strong>partage des savoirs</strong>.<br><br> Dans l’univers du palpable, le centre rural de formation <strong>Patrakala</strong> est un ensemble de bâtiment et de terre appartenant à <strong>ODADI</strong>.
+    presentation: 
+      title: Nouvelle école
+      text: L'un des gros projets <strong>d'ODADI</strong> fut de construire une <strong>nouvelle école</strong> ainsi qu'un <strong>logement pour l'instituteur</strong> ! <br><br>Afin de les aider dans leur démarches de scolarisation de leurs enfants, l’association <strong>OdADI-F</strong> fournit depuis 2013 des <strong>kits scolaires</strong> aux enfants scolarisés dans différents fokontany. Tous les ans nous aidons des enfants issus <strong>d’EPP (Ecoles Primaires Publiques)</strong> différentes.
 
 history:
   name: Nous connaître
@@ -32,11 +62,12 @@ history:
   whoweare:
     presentation:
       title: QUI SOMMES NOUS ?
-      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a maxime! Eius illum perferendis, magni laudantium vitae, dolorum ex sint minima earum, repellendus deleniti doloremque quibusdam cum vel impedit deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni vero autem ducimus, cum dolores, dignissimos vitae debitis sint aspernatur natus optio labore assumenda minus qui dolor officiis facilis sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet eius modi reiciendis minima quidem laudantium laborum sapiente adipisci cupiditate amet voluptatem, corrupti ea rem deleniti aut iusto autem libero.
+      text: Venant de tous les horizons de la France, l'équipe de l'association OdADI-F est principalement composé de proche de <strong>Michel Rocolle</strong>, créateur de l'association. Amis, familles, connaissances communes ou partenaires. <br><br> Depuis sa mort, l'association est passé au main de sa fille Marie-Agnès pour finir sur les épaules de son fils aîné Patrice ! C'est une entreprise familiale et investit pour la cause auquel Michel croyait.
+
   creation:
     presentation:
       title: CRÉATION
-      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum distinctio illum eveniet sapiente perferendis excepturi corporis! Itaque, voluptatem voluptates molestias corrupti, quidem, illum ipsa pariatur quos error delectus et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, ex deleniti. Voluptatem delectus consectetur ad ratione cum, autem dolor reprehenderit non aliquid nostrum voluptas eos, esse tempore repellendus sint tenetur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores consequuntur inventore reprehenderit aspernatur eveniet, obcaecati provident, excepturi quibusdam velit explicabo sit fugiat eligendi alias. Nam laboriosam fugit itaque atque consectetur?
+      text: Créée en 2008 par <strong>Michel Rocolle</strong> avec l'aide de <strong>Michel Noël</strong> l’association, en partenariat avec <strong>ODADI</strong>, cherche par tous les moyens à <strong>lutter contre la pauvreté</strong> et à améliorer les <strong>conditions de vie dans les campagnes malgaches.</strong> 
   association:
     presentation:
       title: ASSOCIATION MÈRE
@@ -52,12 +83,23 @@ data:
   titleTag: Odadi France - Vos données personnelles
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
   content:
-    title: Avis important sur le traitement des données en relation avec Google Analytics
-    text: Ce site utilise <strong>Google Analytics</strong>, un service d’analyse web fourni par <strong>Google Ireland Limited</strong>. Si l’organe responsable du traitement des données recueillies par ce site est basé hors de l’Espace économique européen et de la Suisse, alors le traitement des données associées à Google Analytics sera effectué par <strong>Google LLC</strong> (dont le siège est aux États-Unis). Google Ireland Limited et Google LLC sont dénommés ci-après « Google ».<br><br>Google Analytics utilise des « cookies », des fichiers textes enregistrés sur l’ordinateur du visiteur du site, afin d’analyser l’utilisation du site par ce dernier. Les informations générées par le cookie (incluant l’adresse IP tronquée) sur l’utilisation du site web sont transmises à et conservées par Google. Google LLC garantit de conserver un niveau de protection des données adéquat conformément aux clauses contractuelles européennes standard. Les données envoyées et couplées aux cookies de Google Analytics, telles que l’identifiant de l’utilisateur et l’identifiant publicitaire, seront automatiquement effacées au bout de 50 mois.<br><br> Les données ayant atteint la date limite de conservation sont supprimées automatiquement une fois par mois. Le visiteur du site peut refuser l’utilisation de cookies en sélectionnant l’option appropriée dans le navigateur. Il peut aussi empêcher Google de recueillir des informations (incluant son adresse IP) par les cookies et de les traiter en téléchargeant le plug-in suivant et en l’installant sur son navigateur Internet <a href='https://tools.google.com/dlpage/gaoptout'>https://tools.google.com/dlpage/gaoptout</a>.<br><br>Pour plus d’informations sur le traitement et l’utilisation des données par Google, les paramétrages et les possibilités de désactivation, veuillez consulter les Conditions d’utilisation de Google Analytics ou la politique de confidentialité de Google.
+    title: Avis important sur le traitement des données
+    text: Le règlement n°2016/679, dit Réglement général de la protection des données (RGPD), est un règlement de l'Union Européènne qui constitue le texte de référence en matière de protections des données à caractères personnelles. <br><br> En application des articles 39 et suivants de la loi du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, de rectification, d'opposition, et de suppression aux informations qui vous concernent.
+    cookie:
+      title: 
 
 legal:
   name: Mentions légales
   titleTag: Odadi France - Mentions légales
   metaDescription: Association caritative qui a pour but de soutenir Madagascar
   content:
-    text: A COMPLETER (PREND EXEMPLE FSCF)
+    editor:
+      title: Editeur du site internet
+      text: En référence à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, la Fédération Sportive et Culturelle de France est tenue de d’assurer un accès facile, direct et permanent aux informations suivantes
+      moral-person: OdADI-F (Organisation d'Appui au Développement Intégré France)
+      social-reason: Association loi 1901
+      qg: 6 Rue Des Hortensias 35270 Combourg
+    creator:
+      title: Conception et réalisation du site internet
+      moral-person: Clément Rocolle
+      qg: 13 rue Docteur Victor Despeignes 69008 Lyon
