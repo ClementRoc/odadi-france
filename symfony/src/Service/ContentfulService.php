@@ -82,6 +82,7 @@ class ContentfulService
         $query = (new Query())
             ->setContentType($contentType)
             ->setLimit($limit)
+            ->orderBy('sys.createdAt', true)
         ;
 
         return $this->client->getEntries($query);

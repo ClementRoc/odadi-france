@@ -1,9 +1,16 @@
 <div class="page-header lazyload-right">
     <div class="page-header-button">
-        <a class="button button-header" href="{{ path('app_home') }}">
-            <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
-            <p class="desktop">Accueil</p>
-        </a>
+        {% if pageTitle == 'À la une' %}
+            <a class="button button-header" href="{{ path('app_news') }}">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p class="desktop">Actualités</p>
+            </a>
+        {% else %}
+            <a class="button button-header" href="{{ path('app_home') }}">
+                <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                <p class="desktop">Accueil</p>
+            </a>
+        {% endif %}
         {# <a class="button button-header" href="">
             <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
             <p>À la une</p>

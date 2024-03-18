@@ -22,6 +22,10 @@
                 <div class="presentation">
                     <h1 class="presentation-title desktop">{{ 'history.whoweare.presentation.title'|trans }}</h1>
                     <p class="presentation-text">{{ 'history.whoweare.presentation.text'|trans|raw }}</p>
+                    <a class="button button-yellow yellow" href="#team">
+                        Toute l'équipe
+                        <img src="{{ asset('build/img/logos/arrow.png') }}" alt="">
+                    </a>
                 </div>
             </div>
             <div class="history-content-creation">
@@ -37,7 +41,7 @@
                     <p class="presentation-text">{{ 'history.association.presentation.text'|trans|raw }}</p>
                 </div>
             </div>
-            <div class="history-content-team">
+            <div class="history-content-team" id="team">
                 <h1 class="history-content-team-title">TOUTE L'ÉQUIPE</h1>
                 <div class="history-content-team-member">
                     {% for member in members %}

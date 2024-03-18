@@ -63,7 +63,6 @@ history:
     presentation:
       title: QUI SOMMES NOUS ?
       text: Venant de tous les horizons de la France, l'équipe de l'association OdADI-F est principalement composé de proche de <strong>Michel Rocolle</strong>, créateur de l'association. Amis, familles, connaissances communes ou partenaires. <br><br> Depuis sa mort, l'association est passé au main de sa fille Marie-Agnès pour finir sur les épaules de son fils aîné Patrice ! C'est une entreprise familiale et investit pour la cause auquel Michel croyait.
-
   creation:
     presentation:
       title: CRÉATION
@@ -71,7 +70,7 @@ history:
   association:
     presentation:
       title: ASSOCIATION MÈRE
-      text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur vitae soluta aperiam, sint impedit doloribus recusandae. Magnam temporibus, maiores, sequi omnis nulla aliquam, reprehenderit ab ex harum odit consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti deserunt aliquid quos beatae consequuntur maxime voluptatem natus tempore. Explicabo reprehenderit velit quo quos, aliquam sequi dolor saepe necessitatibus labore magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolor ex earum voluptatem beatae dolorem, minima ab quibusdam officiis commodi magni molestias vel odio mollitia illum id dolorum doloremque ratione?
+      text: <strong>OdADI-France</strong> est une extension française qui a pour objectif de venir en soutien à l'association sur place, <strong>ODADI</strong>. La <strong>présidente Eulalia</strong> nous donne régulièrement des nouvelles de ce qui se passe en plus des besoins sur place. C'est eux qui ont <strong>construit le centre Patrakala</strong> et qui s'occupent des <strong>infrastructures sur place</strong> (construction, entretien, cantine, formation etc...) ! Votre participation nous permet de les aider au mieux.
 
 contact:
   name: Nous contacter

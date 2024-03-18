@@ -178,7 +178,6 @@
                     &-title{
                         font-size: 64px;
                         font-family: $font-geo;
-                        font-weight: 100;
 
                         @include responsive-xs{
                             font-size: 38px;
@@ -245,6 +244,7 @@
 
                         &-text{
                             margin-left: 2rem;
+                            font-family: $font-geo;
 
                             @include responsive-xs{
                                 font-size: 20px;
