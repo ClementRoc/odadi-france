@@ -4,11 +4,20 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+
+        @include responsive-md{
+            flex-flow: column nowrap;
+        }
     }
 
     &-hotnews{
         width: 40%;
         margin-top: 4rem;
+
+        @include responsive-md{
+            width: auto;
+            margin-bottom: 30rem;
+        }
 
         &-container{
             display: flex;
@@ -37,6 +46,10 @@
         margin-top: 2rem;
         width: 50%;
 
+        @include responsive-md{
+            width: auto;
+        }
+
         &-header{
 
             &-title{
@@ -64,6 +77,16 @@
                     border-radius: 50%;
                     z-index: -1;
 
+                    @include responsive-md{
+                        width: 25rem;
+                        height: 25rem;
+                    }
+
+                    @include responsive-xs{
+                        width: 15rem;
+                        height: 15rem;
+                    }
+
                     &-img{
                         display: inline;
                         margin: 0 auto;
@@ -82,6 +105,11 @@
                     overflow: hidden;
                     border-radius: 50%;
                     z-index: -2;
+
+                    @include responsive-xs{
+                        top: -4rem;
+                        left: 38%;
+                    }
 
                     &-img{
                         display: inline;

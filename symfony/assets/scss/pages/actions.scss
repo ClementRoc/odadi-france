@@ -71,10 +71,28 @@
                 }
 
                 &-img{
-                    width: 60%;
+                    position: relative;
 
-                    @include responsive-xs{
-                        width: 70%;
+                    &-cropper{
+                        width: 20rem;
+                        height: 20rem;
+                        overflow: hidden;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        z-index: -1;
+        
+                        @include responsive-xs{
+                            width: 12rem;
+                            height: 12rem;
+                        }
+        
+                        img{
+                            display: inline;
+                            margin: 0 auto;
+                            margin-left: -25%;
+                            height: 100%;
+                            width: auto;
+                        }
                     }
                 }
     
@@ -310,19 +328,28 @@
 
                 &-img{
                     position: relative; 
-                    left: -3rem;
 
-                    @include responsive-md{
-                        width: 60%;
-                        height: 60%;
-                    }
+                    &-cropper{
+                        width: 30rem;
+                        height: 30rem;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        z-index: -1;
 
-                    @include responsive-xs{
-                        left: 0;
-                        width: 70%;
-                        height: unset;
+                        @include responsive-xs{
+                            width: 15rem;
+                            height: 15rem;
+                        }
+
+                        img{
+                            display: inline;
+                            margin: 0 auto;
+                            margin-left: -25%;
+                            height: 100%;
+                            width: auto;
+                        }
                     }
-                }
+                } 
 
                 &-text{
                     width: 30%;

@@ -115,10 +115,14 @@ class ContentfulService
         $asset      = $entry->get($attribute);
         $mediaDTO   = new MediaDTO();
 
-        foreach ($asset as $item) {
-            $mediaDTO->format   = $item->getFile()->getContentType();
-            $mediaDTO->url      = $item->getFile()->getUrl();
-            $mediaDTO->fileName = $item->getFile()->getFileName();
+        if (is_array($asset)){
+            foreach ($asset as $item) {
+                $mediaDTO->url      = $item->getFile()->getUrl();
+                $mediaDTO->fileName = $item->getFile()->getFileName();
+            }
+        } else {
+            $mediaDTO->url      = $asset->getFile()->getUrl();
+            $mediaDTO->fileName = $asset->getFile()->getFileName();
         }
 
         return $mediaDTO;

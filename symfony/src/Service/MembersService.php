@@ -43,7 +43,6 @@ class MembersService
             $emptyPicture = new MediaDTO();
             $emptyPicture->fileName = 'Empty';
             $emptyPicture->url      = '/build/img/history/member/member-empty.png';
-            $emptyPicture->format   = 'Empty';
             $memberDTO->picture     = $emptyPicture;
         } else {
             $memberDTO->picture     = $this->checkMedia($item, 'picture');

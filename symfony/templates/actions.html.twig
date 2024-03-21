@@ -14,7 +14,9 @@
         {% include 'include/page-header.html.twig' %}
         <div class="actions-formation">
             <div id="formation" class="actions-formation-presentation">
-                <img class="actions-formation-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                <div class="actions-formation-presentation-img">
+                    <img class="actions-formation-presentation-img-cropper" src="{{ asset('build/img/actions/femmes.jpg') }}" alt="Repas">
+                </div>
                 <div class="actions-formation-presentation-info">
                     <h2 class="actions-formation-presentation-info-number huge-number desktop">1</h2>
                     <div class="actions-formation-presentation-info-text">
@@ -120,7 +122,9 @@
             </div>
             <hr class="actions-urban-line">
             <div class="actions-urban-presentation">
-                <img class="actions-urban-presentation-img" src="{{ asset('build/img/history/creation.png') }}" alt="Repas">
+                <div class="actions-urban-prensentation-img">
+                    <img class="actions-urban-presentation-img-cropper" src="{{ asset('build/img/actions/urbanisation.jpg') }}" alt="Repas">
+                </div>
                 <div class="actions-urban-presentation-text">
                      <h1 class="title">{{ 'actions.urbanisation.presentation.title'|trans }}</h1>
                      <p class="text">{{ 'actions.urbanisation.presentation.text'|trans|raw }}</p>

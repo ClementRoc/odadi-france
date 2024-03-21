@@ -17,7 +17,9 @@
                 <div class="contact-header-member-container">
                     {% for member in members %}
                     <div class="member">
-                        <img src="{{ member.picture.url }}" alt="">
+                        <div class="member-img">
+                            <img src="{{ member.picture.url }}" alt="">
+                        </div>
                         <div class="member-info">
                             <h1 class="member-info-name">{{ member.name }}</h1>
                             <p class="member-info-job">{{ member.job }}</p>

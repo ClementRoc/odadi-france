@@ -79,11 +79,30 @@
                         flex-flow: row nowrap;
                         gap: 2rem;
 
-                        img{
+                        &-img{
                             max-width: 13rem;
+                            max-height: 13rem;
+                            position: relative;
+                            overflow: hidden;
+                            top: 1rem;
+                            left: 1rem;
+                            border-radius: 50%;
 
                             @include responsive-xs{
                                 max-width: 8rem;
+                                max-height: 8rem;
+                            }
+
+                            img{
+                                display: inline;
+                                margin: 0 auto;
+                                height: 100%;
+                                width: 13rem;
+                                object-fit: cover;
+
+                                @include responsive-xs{
+                                    width: 8rem;
+                                }
                             }
                         }
 
@@ -147,6 +166,10 @@
             }
 
             &-form{
+
+                h1{
+                    font-family: $font-geo;
+                }
 
                 .container-form{
                     padding: 1rem 15rem 1rem 2rem;

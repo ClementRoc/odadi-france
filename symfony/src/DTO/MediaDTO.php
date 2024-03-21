@@ -15,9 +15,4 @@ class MediaDTO
      * @var string
      */
     public $url;
-
-    /**
-     * @var string
-     */
-    public $format;
 }
