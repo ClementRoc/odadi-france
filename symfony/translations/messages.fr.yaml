@@ -7,6 +7,12 @@ odadi:
   membership: https://www.helloasso.com/associations/odadi/adhesions/adhesion
   partner:
     FSCF: https://www.fscf.asso.fr/
+  conception:
+    khaos: 
+      instagram: https://www.instagram.com/khaos.premier/
+    clement: 
+      website: http://clement-rocolle.com/
+      link: clement-rocolle.com
 
 home: 
   name: Page d'accueil
@@ -100,5 +106,9 @@ legal:
       qg: 6 Rue Des Hortensias 35270 Combourg
     creator:
       title: Conception et réalisation du site internet
-      moral-person: Clément Rocolle
-      qg: 13 rue Docteur Victor Despeignes 69008 Lyon
+      conception:
+        company: Khaos premier
+        social: https://www.instagram.com/khaos.premier/
+      realisation:
+        moral-person: Clément Rocolle
+        qg: 13 rue Docteur Victor Despeignes 69008 Lyon
