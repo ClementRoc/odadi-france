@@ -41,7 +41,7 @@ actions:
         presentation: En <strong>2019</strong> les femmes ont émis le souhait d’être formé à la vannerie. <br><br>Elles ont ainsi confectionné des <strong>sacs</strong>, des <strong>chapeaux</strong> et des petits <strong>paniers.</strong>
   food:
     header:
-      text: Nous participons activement au développement de la <strong>cantine</strong> du Centre Patrakala, pour cela nous effectuons un virement trimestriel afin d'aider <strong>ODADI</strong> à nourrir toutes les âmes du centre ! <br> Vos dons nous permettrons de maintenir ces <strong>virements essentielles</strong> au bon fonctionnement et la santé des personnes sur place !
+      text: Nous participons activement au développement de la <strong>cantine</strong> du Centre Patrakala, pour cela nous effectuons un virement trimestriel afin d'aider <strong>ODADI</strong> à nourrir toutes les âmes du centre ! <br> Vos dons nous permettrons de maintenir ces <strong>virements essentiels</strong> au bon fonctionnement et la santé des personnes sur place !
     presentation:
       title: Cantine scolaire
       text: La cantine scolaire permet de <strong>nourrir une centaine d'enfants</strong> 4 fois par mois (300g de riz et 80g de poisson/poulet par enfant)
@@ -56,7 +56,7 @@ actions:
         presentation: L’apiculture tient également une place importante au centre puisque l’association possède un rucher destiné à produire du miel et le vendre, dans l’objectif pour <strong>ODADI</strong> d’être autonome financièrement.
   urbanisation:
     header:
-      text: Le <strong>Centre Patrakala</strong> (qui signifie "goutte d’eau")  désigne avant tout une <strong>aventure humaine et un objectif</strong>. C’est l’envie d’un groupe de personne d’aider les ruraux malgache dans l’amélioration de leur <strong>condition de vie</strong> et vers le <strong>partage des savoirs</strong>.<br><br> Dans l’univers du palpable, le centre rural de formation <strong>Patrakala</strong> est un ensemble de bâtiment et de terre appartenant à <strong>ODADI</strong>.
+      text: Le <strong>Centre Patrakala</strong> (qui signifie "goutte d’eau")  désigne avant tout une <strong>aventure humaine et un objectif</strong>. C’est l’envie d’un groupe de personnes d’aider les ruraux malgache dans l’amélioration de leur <strong>condition de vie</strong> et vers le <strong>partage des savoirs</strong>.<br><br> Dans l’univers du palpable, le centre rural de formation <strong>Patrakala</strong> est un ensemble de bâtiment et de terre appartenant à <strong>ODADI</strong>.
     presentation: 
       title: Nouvelle école
       text: L'un des gros projets <strong>d'ODADI</strong> fut de construire une <strong>nouvelle école</strong> ainsi qu'un <strong>logement pour l'instituteur</strong> ! <br><br>Afin de les aider dans leur démarches de scolarisation de leurs enfants, l’association <strong>OdADI-F</strong> fournit depuis 2013 des <strong>kits scolaires</strong> aux enfants scolarisés dans différents fokontany. Tous les ans nous aidons des enfants issus <strong>d’EPP (Ecoles Primaires Publiques)</strong> différentes.
@@ -68,7 +68,7 @@ history:
   whoweare:
     presentation:
       title: QUI SOMMES NOUS ?
-      text: Venant de tous les horizons de la France, l'équipe de l'association OdADI-F est principalement composé de proche de <strong>Michel Rocolle</strong>, créateur de l'association. Amis, familles, connaissances communes ou partenaires. <br><br> Depuis sa mort, l'association est passé au main de sa fille Marie-Agnès pour finir sur les épaules de son fils aîné Patrice ! C'est une entreprise familiale et investit pour la cause auquel Michel croyait.
+      text: Venant de tous les horizons de la France, l'équipe de l'association OdADI-F est principalement composé de proches de <strong>Michel Rocolle</strong>, créateur de l'association. Amis, familles, connaissances communes ou partenaires. <br><br> Depuis sa mort, l'association est passé au main de sa fille Marie-Agnès pour finir sur les épaules de son fils aîné Patrice ! C'est une entreprise familiale et investit pour la cause auquel Michel croyait.
   creation:
     presentation:
       title: CRÉATION
