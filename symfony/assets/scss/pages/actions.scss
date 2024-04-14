@@ -17,19 +17,24 @@
             width: 50%;
 
             @include responsive-md{
-                width: 150%;
+                width: 150vw;
             }
 
             @include responsive-xs{
-                width: 250%;
+                width: 200vw;
             }
 
             &-left{
                 left: -28rem;
                 top: 28%;
 
+                @include responsive-md{
+                    left: -75%;
+                    top: 4rem;
+                }
+
                 @include responsive-xs{
-                    left: -44rem;
+                    left: -100%;
                     top: 4rem;
                 }
             }
@@ -304,7 +309,7 @@
                 border: 1px solid black;
 
                 @include responsive-md{
-                    width: 109%;
+                    width: 108%;
                 }
 
                 @include responsive-xs{
@@ -502,10 +507,6 @@
         }
 
         &-urban{
-
-            @include responsive-md{
-                margin-bottom: 30rem;
-            }
             
             &-line{
 

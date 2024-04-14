@@ -15,9 +15,8 @@
 
         &-background{
             position: absolute;
-            left: -42rem;
-            top: 2rem;
-            width: 250%;
+            left: -100%;
+            width: 200vw;
             z-index: -2;
         }
 
@@ -29,7 +28,6 @@
 
             @include responsive-md{
                 flex-flow: column-reverse nowrap;
-                margin-bottom: 30rem;
                 gap: 4rem;
             }
 

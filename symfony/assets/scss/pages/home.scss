@@ -30,15 +30,13 @@
             }
 
             @include responsive-md{
-                left: -69rem;
-                top: 55rem;
-                width: 200%;
+                left: -75%;
+                width: 150vw;
             }
 
             @include responsive-xs{
-                left: -42rem;
-                top: 32rem;
-                width: 250%;
+                left: -100%;
+                width: 200vw;
             }
         }
 
@@ -318,14 +316,12 @@
                 margin-bottom: 10rem;
 
                 @include responsive-md{
-                    margin-bottom: 35rem;
                     align-items: end;
                     width: 100%;
                     padding-right: 4rem;
                 }
 
                 @include responsive-xs{
-                    margin-bottom: 30rem;
                     padding-right: 0;
                 }
 

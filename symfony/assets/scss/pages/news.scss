@@ -88,16 +88,11 @@
             justify-content: space-between;
             gap: 5rem;
 
-            @include responsive-md{
-                margin-bottom: 35rem;
-            }
-
             @include responsive-xs{
                 flex-flow: column nowrap;
                 justify-content: unset;
                 margin-top: 4rem;
                 gap: 2rem;
-                margin-bottom: 30rem;
             }
         }
     }
