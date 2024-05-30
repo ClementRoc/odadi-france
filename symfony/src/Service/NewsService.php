@@ -9,6 +9,7 @@ use App\DTO\ActualityDTO;
 use App\Exception\HydrateObjectContentfulException;
 use Contentful\Delivery\Resource\Entry;
 use Exception;
+use Symfony\Polyfill\Intl\Icu\DateFormat\MonthTransformer;
 
 class NewsService
 {
@@ -22,7 +23,7 @@ class NewsService
 
     public function getActualities(): array
     {
-        $actualities    = $this->contentfulService->getEntriesByContentType('actuality');
+        $actualities    = $this->contentfulService->getEntriesByOrder('actuality', 'fields.date', true);
         $actualitiesDTO = [];
 
         if (current($actualities->getIterator()) !== null) {

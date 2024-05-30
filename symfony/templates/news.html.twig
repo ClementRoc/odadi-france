@@ -37,7 +37,7 @@
         </div>
         <div class="news-container lazyload">
             {% for actuality in actualities %}
-                {{ actualityMacro.actualityOverlook('', actuality.picture, actuality.title, actuality.category, actuality.filter, actuality.date, actuality.preview, actuality.slug, actuality.AG) }}
+                {{ actualityMacro.actualityOverlook('', actuality.picture, actuality.title, actuality.category, actuality.filter, actuality.date|date('d/m/Y'), actuality.preview, actuality.slug, actuality.AG) }}
             {% endfor %}
         </div>
     </div>
