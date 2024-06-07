@@ -125,6 +125,24 @@
         &-text{
             margin-top: 4rem;
         }
+
+        &-button{
+
+            a{
+                gap: 0;
+                justify-content: space-between;
+                width: 100%;
+
+                img{
+                    width: 3rem;
+
+                    @include responsive-xs{
+                        width: 1.5rem;
+                    }
+                }
+
+            }
+        }
     }
 
     &-overlook{

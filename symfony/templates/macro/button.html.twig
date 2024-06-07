@@ -25,3 +25,10 @@
         {% endif %}
     {% endif %}
 {% endmacro %}
+
+{% macro btnDownload(color, url, filename, text) %}
+    <a class="button button-{{ color }}--no-animation {{ color }}" href="{{ url }}" download="{{ filename }}" target="_blank">
+        {{ text }}
+        <img src="{{ asset('build/img/logos/downloads.png') }}" alt="{{ filename }}">
+    </a>
+{% endmacro %}
