@@ -34,10 +34,10 @@ actions:
     cards:
       first:
         title: Couture
-        presentation: Elles sont proposées <strong>depuis 2012</strong>. Plusieurs groupe de femmes ont pu bénéficier de ces formations. Les formations sont divisées en 2 groupes, le groupe des débutantes et le groupe des confirmés.<br><br>Le groupe des couturières débutantes (formation de base) commence par apprendre à se servir des <strong>machines à coudre à mains</strong>, à coudre les différents points de couture et se sont initiées à la <strong>broderie</strong>. A la fin du cursus, elles reçoivent une <strong>attestation</strong> prouvant leur présence aux formations couture.
+        presentation: Initiés <strong>en 2012</strong>, les formations en couture permettent à plusieurs groupes de femmes (les <strong>débutantes</strong> et les <strong>confirmés</strong>) d'obtenir une <strong>attestation</strong> à la fin de leur cursus. <br><br>Ces formations leurs permettent d'apprendre à se servir de <strong>machines à coudre</strong> ainsi que de s'initier à la <strong>broderie</strong>.
       second:
         title: Vannerie
-        presentation: En <strong>2019</strong> les femmes ont émis le souhait d’être formé à la vannerie. <br><br>Elles ont ainsi confectionné des <strong>sacs</strong>, des <strong>chapeaux</strong> et des petits <strong>paniers.</strong>
+        presentation: Depuis <strong>2019</strong>, en vu d'une <strong>forte demande</strong> de la part des femmes, nous avons lancé une formation en vannerie. <br><br>Cette formation aura permis à celles-ci de confectionner des <strong>sacs</strong>, des <strong>chapeaux</strong> ainsi que des petits <strong>paniers</strong>.
   food:
     header:
       text: Nous participons activement au développement de la <strong>cantine</strong> du Centre Patrakala, pour cela nous effectuons un virement trimestriel afin d'aider <strong>ODADI</strong> à nourrir toutes les âmes du centre ! <br> Vos dons nous permettrons de maintenir ces <strong>virements essentiels</strong> au bon fonctionnement et la santé des personnes sur place !
@@ -45,20 +45,20 @@ actions:
       title: Cantine scolaire
       text: La cantine scolaire permet de <strong>nourrir une centaine d'enfants</strong> 4 fois par mois (300g de riz et 80g de poisson/poulet par enfant)
   farming:
-    presentation: <strong>ODADI</strong> a souhaité démarrer son projet de développement dans un domaine bien précis, <strong>l’agriculture</strong>. <br><br> <strong>98%</strong> des personnes vivant en milieu rural cultivent la terre, souvent pour leur consommation personnelle mais aussi pour le commerce. <br><br> Avec un centre rural où des <strong>techniques agricoles nouvelles et modernes</strong> sont développées ainsi que des techniciens agricoles formés, l’association apportent aux ruraux une <strong>aide précieuse</strong>. Le fait de posséder des champs et de les cultiver, de subir les mêmes problèmes que les ruraux assoit la crédibilité de l’association.
+    presentation: <strong>ODADI</strong> a décidé d'attaquer le problème à la racine, la première chose à développer est <strong>l'agriculture</strong>. <br><br> Pour la <strong>consommation personnelle</strong> mais également <strong>l'export de marchandises</strong>, l'agriculture est la première pierre à l'édifice d'un <strong>développement durable</strong>, et de plus <strong>écologique</strong>. <br><br>C'est ainsi que commence la <strong>formation de techniciens agricoles</strong> et le développement de <strong>techniques modernes et efficaces</strong>. La <strong>création d'huiles essentielles</strong> mais également <strong>l'apiculture</strong> sont actuellement les 2 grosses activités des ruraux du centre. 
     cards:
       first:
         title: Huiles Essentielles
-        presentation: En 2012, une unité de distillation a été créée au <strong>Centre Patrakala</strong> de l’association <strong>ODADI</strong>. Cette installation utilise le principe de la distillation à la vapeur pour produire Huiles Essentielles et Eaux Florales. <br><br>Les plantes distillées poussent au <strong>Centre Patrakala</strong> et ses alentours, dans un environnement naturel.
+        presentation: La <strong>fabrication d'huiles essentielles</strong> repose sur deux techniques principales, la <strong>distillation à la vapeur d'eau</strong> et l'expression à froid. <strong>ODADI</strong> a choisi la <strong>distillation</strong>, c'est ainsi qu'est née en <strong>2012</strong> la distillerie du Centre Patrakala ! <br><br>Et grâce aux <strong>techniques agricoles</strong> au point, la <strong>production</strong> des plantes est <strong>maison</strong>. Le tout dans un <strong>environnement 100% naturel</strong>. 
       second:
         title: Apiculture
-        presentation: L’apiculture tient également une place importante au centre puisque l’association possède un rucher destiné à produire du miel et le vendre, dans l’objectif pour <strong>ODADI</strong> d’être autonome financièrement.
+        presentation: L’association a en sa possession un <strong>rucher</strong> lui permettant de <strong>produire son miel et de le vendre</strong>. <br><br>Cette production est une des ressources principales qui permettrait à terme de <strong>rendre ODADI indépendant financièrement</strong>.
   urbanisation:
     header:
-      text: Le <strong>Centre Patrakala</strong> (qui signifie "goutte d’eau")  désigne avant tout une <strong>aventure humaine et un objectif</strong>. C’est l’envie d’un groupe de personnes d’aider les ruraux malgache dans l’amélioration de leur <strong>condition de vie</strong> et vers le <strong>partage des savoirs</strong>.<br><br> Dans l’univers du palpable, le centre rural de formation <strong>Patrakala</strong> est un ensemble de bâtiment et de terre appartenant à <strong>ODADI</strong>.
+      text: Le <strong>Centre Patrakala</strong> à été tout d'abord l'envie d'un groupe d'aider les malgaches. Leur <strong>objectif primaire</strong> était de leur apporter tout <strong>leurs savoirs</strong> (agriculture, formations, scolarisation des enfants) mais également une augmentation de leurs <strong>moyens</strong> et <strong>condition de vie</strong>. <br><br>C'est ainsi qu'au fil des années, le centre a vu la <strong>construction de plusieurs bâtiments</strong> (école, cantine, distillerie) appartenant désormais à <strong>ODADI</strong>.
     presentation: 
       title: Nouvelle école
-      text: L'un des gros projets <strong>d'ODADI</strong> fut de construire une <strong>nouvelle école</strong> ainsi qu'un <strong>logement pour l'instituteur</strong> ! <br><br>Afin de les aider dans leur démarches de scolarisation de leurs enfants, l’association <strong>OdADI-F</strong> fournit depuis 2013 des <strong>kits scolaires</strong> aux enfants scolarisés dans différents fokontany. Tous les ans nous aidons des enfants issus <strong>d’EPP (Ecoles Primaires Publiques)</strong> différentes.
+      text: L'un des gros projets <strong>d'ODADI</strong> fut de construire une <strong>nouvelle école</strong> ainsi qu'un <strong>logement pour l'instituteur</strong> ! <br><br>Afin de les aider dans leur <strong>démarches de scolarisation</strong> de leurs enfants, l’association <strong>OdADI-F</strong> fournit depuis 2013 des <strong>kits scolaires</strong> aux enfants scolarisés dans différents <strong>fokontany</strong> (subvision cummunale à Madagascar). Tous les ans nous aidons des enfants issus <strong>d’EPP (Ecoles Primaires Publiques)</strong> différentes.
 
 history:
   name: Nous connaître
